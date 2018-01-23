@@ -1,0 +1,15 @@
+
+.nav-menu{
+    width: 100%;
+    border: 2px solid red;
+}
+
+.clearfix{ 
+display: flex;
+}
+
+.clearfix > li{
+    list-style-type: none;
+    
+    padding: 20px;
+}
