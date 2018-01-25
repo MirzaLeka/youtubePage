@@ -5,9 +5,8 @@ body, .container, .jumbotron{
 
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 
-
 #header{
-  background: url(https://i.ytimg.com/vi/d_d1vg3NWVA/maxresdefault.jpg) no-repeat center center;
+  background: url("\headercover.jpg") no-repeat center center;
     width: 100%;
     padding: 20px 10px 60px 10px;
     height: 100vh; 
@@ -16,13 +15,13 @@ body, .container, .jumbotron{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-  /*   -webkit-filter: blur(15px);
-  -moz-filter: blur(15px);
-  -o-filter: blur(15px);
-  -ms-filter: blur(15px); 
-  filter: blur(15px); */
   line-height: 90vh;
    text-align: center;
+   /*    -webkit-filter: blur(12px);
+  -moz-filter: blur(12px);
+  -o-filter: blur(12px);
+  -ms-filter: blur(12px); 
+  filter: blur(12px); */
 }
 
 h1{
