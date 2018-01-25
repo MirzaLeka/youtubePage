@@ -24,7 +24,7 @@
 <div id="header">
 
 
-<h1><b><cite>NEXT CREW<br>PRODUCTION</cite></b></h1>
+<h1><b><cite></cite></b></h1>
 
     </div>
 
@@ -75,13 +75,31 @@
            <h3 class="contentTitle">Projects</h3>
           </div>
 
-          <br><br><br>
+          <p>Recent uploads</p>
+
+
+          <p>Popular videos</p> 
+
+          <!-- 3x3 videos -->
+
+          <p>Original series</p> 
+
+          <!-- Original Series Accordion -->
+
+          <!-- 
+            Inside each accordion body is a picture regarding that series, height, width 100%, brief description and cards with pics and title
+            Rainbow Six % Battlefield Hardline Saga 
+            two cards, title and picture, card title="watch now, cursor: pointer", third card release date: TBA
+            Nino AC or Anime Saga 
+            Comeback Series
+            Stealth Tube - just TBA -->
+
 
           <div class="contentHeader" id="storiesWeShare">
            <h3 class="contentTitle">Stories We Share</h3>
           </div>
 
-           <br><br><br><br>
+          <!--:: ... --> <br><br><br><br>
 
           <div class="container-fluid">
         <div class="row content">
@@ -126,12 +144,21 @@
            </p>
 
 
+<!-- alone we fight together we dominate 
+say about people who contribute to N[x]C y with voices, share their ideas, and give us feedback 
+say something about working with team, one does the pshob or one does the video other virtual dj
+-->
+
     </div>
 
 
   </div>
           </div>
 
+ 
+<!--         <img style="width: 100px; height: 250px;" src="https://images7.alphacoders.com/371/thumb-1920-371797.jpg">
+         -->
+        
 
           <br><br><br>
       
@@ -220,9 +247,20 @@
 
       <h6 id="snackbarNonyx"><cite>Connect with Nino</cite></h6>
       <h6 id="snackbarSpy4er"><cite>Connect with Mirza</cite></h6>
+    <!-- a da mozda bude samo jedna F-Ja i da kad se pokrene varijabla ima znacenje ili nino ili mirza -->
   
   </div>
 </div> 
+
+<!--
+<iframe width="420" height="345" src="https://www.youtube.com/embed/MT11emrOkm8"
+ allowfullscreen="allowfullscreen"
+ mozallowfullscreen="mozallowfullscreen" 
+ msallowfullscreen="msallowfullscreen" 
+ oallowfullscreen="oallowfullscreen" 
+ webkitallowfullscreen="webkitallowfullscreen">
+</iframe> -->
+
 
                   </div>
              </div>
@@ -256,7 +294,7 @@ $(document).ready(function() {
 
 
     <script>
-
+/* if you mouse over class Nonyx, activate nonyx and set name = nino, else activate spy4er and set name = mirza*/
       function snackbarNonyx() {
     var x = document.getElementById("snackbarNonyx")
     x.className = "show";
@@ -269,6 +307,23 @@ $(document).ready(function() {
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
+var showText = function (target, message, index, interval) {   
+  if (index < message.length) {
+    $(target).append(message[index++]);
+    $(target).append(message[index++]);
+    setTimeout(function () { showText(target, message, index, interval); }, interval);
+  }
+}
+
+
+$(function () {
+
+  var nxcTitle = "NEXT CREW";
+
+  showText("h1 b cite", nxcTitle, 0, 110);   
+
+});
+ 
 
         </script>
 
