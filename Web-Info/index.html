@@ -77,14 +77,74 @@
            <h3 class="contentTitle">Projects</h3>
           </div>
 
-          <p>Recent uploads</p>
+<br>
+
+             <p class="contentSubtitle">Recent uploads</p> 
 
 
-          <p>Popular videos</p> 
+
+          <!-- SLIDER -->
+
+<div id="mycarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#mycarousel" data-slide-to="1"></li>
+    <li data-target="#mycarousel" data-slide-to="2"></li>
+    <li data-target="#mycarousel" data-slide-to="3"></li>
+    <li data-target="#mycarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item" title="Tribute To D-Day" onclick="alert();">
+        <img src="http://i3.ytimg.com/vi/MT11emrOkm8/maxresdefault.jpg" data-color="lightblue" alt="First Image">
+        <div class="carousel-caption">
+        </div>
+    </div>
+    <div class="item" title="Justice League: Come Together">
+        <img src="http://i3.ytimg.com/vi/QaRjZ5hHX-I/maxresdefault.jpg" data-color="firebrick" alt="Second Image">
+        <div class="carousel-caption">
+        </div>
+    </div>
+    <div class="item" title="Naruto: The Path Of The Ninja">
+        <img src="http://i3.ytimg.com/vi/hms61SpaSVA/maxresdefault.jpg" data-color="violet" alt="Third Image">
+        <div class="carousel-caption">
+        </div>
+    </div>
+    <div class="item" title="Hitman: The World's Deadliest Assassin">
+        <img src="http://i3.ytimg.com/vi/JE9u2dCxbzI/maxresdefault.jpg" data-color="lightgreen" alt="Fourth Image">
+        <div class="carousel-caption">
+        </div>
+    </div>
+    <div class="item" title="Marc Eckō's Getting Up: Art Of A Crime">
+        <img src="http://i3.ytimg.com/vi/7hSV2sOy9NE/maxresdefault.jpg" data-color="tomato" alt="Fifth Image">
+        <div class="carousel-caption">
+        </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+          <!--SLIDER -->
+
+<br>
+          <p class="contentSubtitle">Popular videos</p> 
 
           <!-- 3x3 videos -->
 
-          <p>Original series</p> 
+<br>
+
+          <p class="contentSubtitle">Original series</p> 
 
           <!-- Original Series Accordion -->
 
@@ -295,53 +355,11 @@ var ninoHover = "https://yt3.ggpht.com/-tS5KmE9_WSY/AAAAAAAAAAI/AAAAAAAAAAA/rTeQ
 var mirzaNormal = "https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAArhAAAAJDBiMzYyZmE5LTk1ZjEtNGU5Mi05YjI3LWE4ZjZhZDZmNzY1OA.jpg";
 var mirzaHover = "https://yt3.ggpht.com/-sb5E3Nh9vVY/AAAAAAAAAAI/AAAAAAAAAAA/BSnB14CT6-U/s100-mo-c-c0xffffffff-rj-k-no/photo.jpg";
 
-$(document).ready(function() {
-  $('#media').carousel({
-    pause: true,
-    interval: false,
-  });
-});
-
 
 </script>
 
 <!-- index.js -->
 <script src="../Resources/js/index.js">
     </script>
-
-
-    <script>
-/* if you mouse over class Nonyx, activate nonyx and set name = nino, else activate spy4er and set name = mirza*/
-      function snackbarNonyx() {
-    var x = document.getElementById("snackbarNonyx")
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
-
-      function snackbarSpy4er() {
-    var x = document.getElementById("snackbarSpy4er")
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
-
-var showText = function (target, message, index, interval) {   
-  if (index < message.length) {
-    $(target).append(message[index++]);
-    $(target).append(message[index++]);
-    setTimeout(function () { showText(target, message, index, interval); }, interval);
-  }
-}
-
-
-$(function () {
-
-  var nxcTitle = "NEXT CREW";
-
-  showText("h1 b cite", nxcTitle, 0, 200);   
-
-});
- 
-
-        </script>
 
     </html>
