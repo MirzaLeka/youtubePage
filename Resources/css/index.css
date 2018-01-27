@@ -84,6 +84,18 @@ h1{
 height: 210px;
 }
 
+/* slider */
+
+.item{
+  cursor: pointer;
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 /* ISPOD SU Get in Touch kartice */
 
@@ -199,11 +211,7 @@ height: 210px;
     to {bottom: 0; opacity: 0;}
 }
 
-/* slider */
 
-
-.full-screen {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.footer{
+  height: 20vh; width: 100%; border-top: 1px solid #ccc;   text-align: center;
 }
