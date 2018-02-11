@@ -1,6 +1,6 @@
 ### **Next Crew Production official website**
 
-##### Next Crew Production produces high quality content for youtube audience. We do everything from mixing music to video editing and create custom wallpapers.
+##### Next Crew Production produces high quality content for youtube audience. We do everything from mixing music to video editing and creating custom wallpapers.
 ##### Some of the tools we use: 
 * ###### Sony Vegas Pro 
 * ###### Adobe Photoshop
