@@ -19,11 +19,16 @@
     <link rel="stylesheet" href="../Resources/css/index.css">
     <!-- Tab Icon -->
       <link rel="icon" type="image/gif" href="tabIcon.png" />
+
 </head>
 
 <body>
 
 <div id="header">
+
+  <div id="navbar">
+
+  </div>
 
 
 <h1><b><cite></cite></b></h1>
@@ -83,11 +88,22 @@
 
 
 
-          <!-- SLIDER -->
+
+
+<br>
+          <p class="contentSubtitle">Popular videos</p> 
+
+          <!-- 3x3 videos -->
+
+<br>
+
+          <p class="contentSubtitle">Original series</p> 
+
+                    <!-- SLIDER -->
 
 <div id="mycarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators" style="z-index: 1">
     <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
     <li data-target="#mycarousel" data-slide-to="1"></li>
     <li data-target="#mycarousel" data-slide-to="2"></li>
@@ -97,31 +113,34 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item" title='PLAY NOW' onclick="alert();">
-        <img src="http://i3.ytimg.com/vi/MT11emrOkm8/maxresdefault.jpg" data-color="lightblue" alt="First Image">
+    <div class="item" title='Explore Now'>
+        <img src="../Resources/img/rainbowSeries.jpg" data-color="lightblue" alt="First Image">
         <div class="carousel-caption">
-              <h3>Tribute to D-Day</h3>  
+              <h3>Rainbow Six Siege - Battlefield Hardline Saga</h3>  
         </div>
     </div>
-    <div class="item" title='PLAY NOW'>
-        <img src="http://i3.ytimg.com/vi/QaRjZ5hHX-I/maxresdefault.jpg" data-color="firebrick" alt="Second Image">
+    <div class="item" title='Explore Now'>
+        <img src="../Resources/img/assassinsSeries.jpg" data-color="firebrick" alt="Second Image">
         <div class="carousel-caption">
-          <h3>Justice League: Come Together</h3>  
+          <h3>Assassin's Creed: Family Bond Saga</h3>  
         </div>
     </div>
-    <div class="item" title='PLAY NOW'>
-        <img src="http://i3.ytimg.com/vi/hms61SpaSVA/maxresdefault.jpg" data-color="violet" alt="Third Image">
+    <div class="item" title='Explore Now'>
+        <img src="../Resources/img/comebackSeries.jpg" data-color="violet" alt="Third Image">
         <div class="carousel-caption">
+            <h3>Comeback Series Saga</h3> 
         </div>
     </div>
-    <div class="item" title='PLAY NOW'>
-        <img src="http://i3.ytimg.com/vi/JE9u2dCxbzI/maxresdefault.jpg" data-color="lightgreen" alt="Fourth Image">
+    <div class="item" title='Explore Now'>
+        <img src="../Resources/img/onePieceSeries.jpg" data-color="lightgreen" alt="Fourth Image">
         <div class="carousel-caption">
+            <h3>One Piece: The Will of D Saga</h3>  
         </div>
     </div>
-    <div class="item" title='PLAY NOW'>
-        <img src="http://i3.ytimg.com/vi/7hSV2sOy9NE/maxresdefault.jpg" data-color="tomato" alt="Fifth Image">
+    <div class="item" title='Explore Now'>
+        <img src="../Resources/img/spidermanSeries.jpg" data-color="tomato" alt="Fifth Image">
         <div class="carousel-caption">
+          <h3>The Amazing Spiderman Saga</h3>  
         </div>
     </div>
   </div>
@@ -139,22 +158,13 @@
 
           <!--SLIDER -->
 
-<br>
-          <p class="contentSubtitle">Popular videos</p> 
-
-          <!-- 3x3 videos -->
-
-<br>
-
-          <p class="contentSubtitle">Original series</p> 
-
           <!-- Original Series Accordion -->
 
           <!-- 
             Inside each accordion body is a picture regarding that series, height, width 100%, brief description and cards with pics and title
             Rainbow Six % Battlefield Hardline Saga 
             two cards, title and picture, card title="watch now, cursor: pointer", third card release date: TBA
-            Nino AC or Anime Saga 
+            Nino AC, will of D, the amazing Spider
             Comeback Series
             Stealth Tube - just TBA -->
 
@@ -228,11 +238,6 @@
 
 
 </div>
-
-
-
-
-  
 
  
 <!--         <img style="width: 100px; height: 250px;" src="https://images7.alphacoders.com/371/thumb-1920-371797.jpg">
@@ -331,14 +336,6 @@
   </div>
 </div> 
 
-<!--
-<iframe width="420" height="345" src="https://www.youtube.com/embed/MT11emrOkm8"
- allowfullscreen="allowfullscreen"
- mozallowfullscreen="mozallowfullscreen" 
- msallowfullscreen="msallowfullscreen" 
- oallowfullscreen="oallowfullscreen" 
- webkitallowfullscreen="webkitallowfullscreen">
-</iframe> -->
 
 
                   </div>
@@ -354,10 +351,19 @@
 
         </div>
 
+
+
 </body>
 
 <script>
     w3.includeHTML();
+
+   /* $(function(){
+
+$("#navbar").load("navbar.html");
+
+});*/
+
 
 var ninoNormal = "https://media-exp2.licdn.com/media/AAIABADGAAwAAQAAAAAAAAy1AAAAJDA0YmM0ZjBiLWNmNmYtNDM0MS1iMzRiLTUxMDE2MzQzMGIxZA.jpg";
 var ninoHover = "https://yt3.ggpht.com/-tS5KmE9_WSY/AAAAAAAAAAI/AAAAAAAAAAA/rTeQRnKAggU/s100-mo-c-c0xffffffff-rj-k-no/photo.jpg";

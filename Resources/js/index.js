@@ -47,10 +47,11 @@ $('.carousel img').each(function() {
   $(this).remove();
 });
 
+/* Don't want to change height on window Resize
 $(window).on('resize', function (){
   $wHeight = $(window).height();
   $item.height($wHeight);
-});
+}); */
 
 $('.carousel').carousel({
   interval: 6000,
