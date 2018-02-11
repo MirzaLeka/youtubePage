@@ -84,10 +84,23 @@ h1{
   list-style-type: none;
   height: 75px;
   width: 100%;
-      -webkit-box-shadow: 3px 3px 5px 3px #aaa;  
+  -webkit-box-shadow: 3px 3px 5px 3px #aaa;  
   -moz-box-shadow:    3px 3px 5px 3px #aaa;  
   box-shadow:         3px 3px 5px 3px #aaa;  
 }
+
+
+.listImg {
+  float: left;
+  width: 25%px;
+  height: 75px;
+   -webkit-box-shadow: 3px 0px 0px 3px #aaa;  
+  -moz-box-shadow:    3px 0px 0px 3px #aaa;  
+  box-shadow:         3px 0px 0px 3px #aaa;  
+}
+
+
+
 
 
 .storiesPic{
