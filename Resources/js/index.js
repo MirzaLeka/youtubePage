@@ -1,20 +1,17 @@
 
 $(document).ready(function(){
 
-
-
-
-  var uploadsNames = ["Tribute To D-Day", "Dragon Ball Z/Super「AMV」Frenkie, Kontra, Indigo - Đe Će Ko", "JUSTICE LEAGUE: Come Together | Music Video", "Hitman: The World's Deadliest Assassin Trailer","Naruto 「AMV」 The Path Of The Ninja"];
+  var uploadsNames = ["Tribute To D-Day | Operation Overlord June 6 1944 ", "Dragon Ball Z/Super「AMV」Frenkie, Kontra, Indigo - Đe Će Ko", "JUSTICE LEAGUE: Come Together | Music Video", "Hitman: The World's Deadliest Assassin Trailer","Naruto 「AMV」 The Path Of The Ninja"];
 
   var uploadsWallpapers = ["tributeImg.jpg", "dbzImg.png", "jlImg.jpg", "hitmanImg.jpg", "ninjaImg.jpg" ];
 
 var li = "";
 
-for(var i = 0; i < 5; i++) {
-li += ' <li class="listLi">'
+for(var i = 0; i < uploadsNames.length; i++) {
+li += ' <li class="listLi" onclick="getVideoSrc(' + i + ')">'
 + '<img class="listImg" src="../Resources/img/' + uploadsWallpapers[i] + '"/>'
-+ '<ul style="padding-top:25px; list-style-type: none;"> '
-+ '<li>' + uploadsNames[i] + '</li>'
++ '<ul class="innerUl"> '
++ '<li class="innerLi">' + uploadsNames[i] + '</li>'
 + '</ul>   </li>';
 
 
@@ -24,6 +21,16 @@ $("#listOfRecentVideos").append(li);
 
 
 });
+
+function getVideoSrc(src) {
+
+var uploadsSrc = ["https://www.youtube.com/embed/MT11emrOkm8", "https://www.youtube.com/embed/SxrpLTftavg", "https://www.youtube.com/embed/QaRjZ5hHX-I","https://www.youtube.com/embed/JE9u2dCxbzI","https://www.youtube.com/embed/hms61SpaSVA"];
+
+$("iframe").attr("src",uploadsSrc[src]);
+
+
+
+}
 
 
 /* if you mouse over class Nonyx, activate nonyx and set name = nino, else activate spy4er and set name = mirza*/
