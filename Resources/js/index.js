@@ -1,4 +1,31 @@
 
+$(document).ready(function(){
+
+
+
+
+  var uploadsNames = ["Tribute To D-Day", "Dragon Ball Z/Super「AMV」Frenkie, Kontra, Indigo - Đe Će Ko", "JUSTICE LEAGUE: Come Together | Music Video", "Hitman: The World's Deadliest Assassin Trailer","Naruto 「AMV」 The Path Of The Ninja"];
+
+  var uploadsWallpapers = ["tributeImg.jpg", "dbzImg.png", "jlImg.jpg", "hitmanImg.jpg", "ninjaImg.jpg" ];
+
+var li = "";
+
+for(var i = 0; i < 5; i++) {
+li += ' <li class="listLi">'
++ '<img class="listImg" src="../Resources/img/' + uploadsWallpapers[i] + '"/>'
++ '<ul style="padding-top:25px; list-style-type: none;"> '
++ '<li>' + uploadsNames[i] + '</li>'
++ '</ul>   </li>';
+
+
+}
+
+$("#listOfRecentVideos").append(li);
+
+
+});
+
+
 /* if you mouse over class Nonyx, activate nonyx and set name = nino, else activate spy4er and set name = mirza*/
       function snackbarNonyx() {
     var x = document.getElementById("snackbarNonyx")
