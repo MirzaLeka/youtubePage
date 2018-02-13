@@ -122,18 +122,39 @@ $('.carousel').carousel({
 
 
 
-/* if you mouse over class Nonyx, activate nonyx and set name = nino, else activate spy4er and set name = mirza*/
-      function snackbarNonyx() {
-    var x = document.getElementById("snackbarNonyx")
+/* Connect with SNACKBAR */
+
+      function snackbar(y) {
+ 
+    var x = document.getElementById("snackbar");
+    // y can either be Nino or Mirza
+
+if (x.className != "show") {
+ 
     x.className = "show";
+  $("#snackbar cite").text("Connect With " + y);
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+
+    /* What this does is block hover spam. Let's say you hover over one box, Connect with Nino appears. 
+You hover over another, Connect wit Mirza appears, but Connect with Nino didn't disappear yet and you hover again. Boom! 
+Snackbar is starting to appear and disappear like crazy. How to solve the problem?
+Well this separates code into if / else statement, if you see snackbar you can't trigger another before existing one disappears.*/
+
+
+} else {
+
+    $("#snackbar cite").text("Connect With " + y);
+
+// But if it's shown and I hover over another, switch names
+
 }
 
-      function snackbarSpy4er() {
-    var x = document.getElementById("snackbarSpy4er")
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+
 }
+
+
+
+/* NEXT CREW HEADER */
 
 var showText = function (target, message, index, interval) {   
   if (index < message.length) {
