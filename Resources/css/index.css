@@ -70,8 +70,8 @@ h1{
 
 
 .recentUploads{
-  border: 1px solid black;
   height: 300px;
+  border: 1px solid #aaa;
 }
 
 #listOfRecentVideos{
@@ -105,9 +105,50 @@ h1{
   list-style-type: none;
 }
 
+.innerLi{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .innerLi:hover{
   color: #0366d6;
 }
+
+a{
+  text-decoration: none !important;
+  color: black;
+}
+
+.popularTitle{
+  height: 75px;
+  text-align: center;
+  padding-top: 12px;
+  transition: all 0.75s;
+  margin-bottom: 30px;
+      -webkit-box-shadow: 3px 3px 5px 3px #ccc;  
+  -moz-box-shadow:    3px 3px 5px 3px #ccc;  
+  box-shadow:         3px 3px 5px 3px #ccc;  
+}
+
+.hey{
+    cursor: pointer;
+}
+
+.popularTitle:hover{
+  transition: all 0.5s;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;  
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  
+  box-shadow:         3px 3px 5px 6px #ccc;  
+  color: #0366d6 !important;
+}
+
+.header .popularImg {
+  float: left;
+  width: 100px;
+  height: 75px;
+}
+
 
 
 
