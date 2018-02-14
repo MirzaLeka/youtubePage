@@ -84,7 +84,7 @@ let popularImg = ["roronoaPopular.jpg", "suicidePopular.jpg", "igiPopular.jpg",
   
   for(let i = 0; i < popularVidArray.length; i++) {
     
-    row+='  <div class="col-sm-4 hey"> <div class="header"> <a href="'+ popularVidUrl[i] + '" target="_blank">  <img class="popularImg" src="../Resources/img/' + popularImg[i] + ' "/>         <h4 class="popularTitle">' + popularVidArray[i] + '</h4> </a> </div> </div>'
+    row+='  <div class="col-sm-4 hey"> <div class="header" title="Watch on Youtube"> <a href="'+ popularVidUrl[i] + '" target="_blank">  <img class="popularImg" src="../Resources/img/' + popularImg[i] + ' "/>         <h4 class="popularTitle">' + popularVidArray[i] + '</h4> </a> </div> </div>'
     
   }
   $("#row").html(row);
@@ -146,6 +146,7 @@ Well this separates code into if / else statement, if you see snackbar you can't
     $("#snackbar cite").text("Connect With " + y);
 
 // But if it's shown and I hover over another, switch names
+
 
 }
 
