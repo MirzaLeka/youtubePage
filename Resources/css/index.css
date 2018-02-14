@@ -6,7 +6,7 @@ body, .container, .jumbotron{
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 
 #header{
-  background: url("\headercoverblur15.jpg") no-repeat center center;
+  background: url("../img/headerCoverBlur.jpg") no-repeat center center;
     width: 100%;
     padding: 20px 10px 60px 10px;
     height: 100vh; 
@@ -17,7 +17,7 @@ body, .container, .jumbotron{
     -o-background-size: cover;
   line-height: 90vh;
    text-align: center;
-   /*    -webkit-filter: blur(12px);
+ /*  -webkit-filter: blur(12px);
   -moz-filter: blur(12px);
   -o-filter: blur(12px);
   -ms-filter: blur(12px); 
@@ -397,6 +397,7 @@ height: 210px;
 .side-tab:hover {
         cursor: pointer;
     }
+    
     .panel.panel-default {
         border: none;
         box-shadow: none !important;
@@ -404,11 +405,13 @@ height: 210px;
         border-bottom-left-radius: 0px;
         
     }
+
     .panel-heading {
         border: none;
         background-color: #333;
     
     }
+
     .panel-body {
         background-color: #eee;
     }
