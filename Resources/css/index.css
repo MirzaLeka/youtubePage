@@ -33,7 +33,6 @@ body, .container, .jumbotron{
     -moz-background-size: cover;
     -o-background-size: cover;
     border-bottom: 2px solid #0366d6;
-    border-top: 2px solid #0366d6;
 }
 
 #recentUploads{
