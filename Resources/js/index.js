@@ -168,9 +168,15 @@ var showText = function (target, message, index, interval) {
 
 $(function () {
 
-  var nxcTitle = "NEXT CREW";
+  var nxcTitle = " NEXT CREW";
 
   showText("h1 b cite", nxcTitle, 0, 200);   
 
 });
 
+
+function openEmail(){
+
+window.open("nxc-production@live.com");
+  
+}
