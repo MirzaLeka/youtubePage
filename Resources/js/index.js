@@ -177,6 +177,88 @@ $(function () {
 
 function openEmail(){
 
-window.open("nxc-production@live.com");
+window.open("mailto:nxc-production@live.com");
   
 }
+
+/* Scrolling around */
+
+// Home
+
+$("#home").click( function() {
+  
+  	$("html, body").animate({ scrollTop: 0 }, 1000);
+  
+} );
+
+// Crew
+
+$("#cr").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#meetTheCrew").offset().top
+    }, 1000);
+});
+
+// Projects
+
+$("#pr").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+    }, 1000);
+});
+
+// Stories
+
+$("#st").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#stories").offset().top
+    }, 1000);
+});
+
+
+// Get in touch
+
+$("#gt").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#getInTouch").offset().top
+    }, 1000);
+});
+
+////////////////////
+
+// Recent Uploads
+
+$("#ru").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#scrollRu").offset().top
+    }, 1000);
+});
+
+
+// Popular Uploads
+
+$("#pu").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#scrollPu").offset().top
+    }, 1000);
+});
+
+
+// Original Series
+
+$("#os").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#scrollOs").offset().top
+    }, 1000);
+});
+
+
+// Where do we go next
+
+$("#wd").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#scrollWd").offset().top
+    }, 1000);
+});
+
+
