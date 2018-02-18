@@ -262,3 +262,6 @@ $("#wd").click(function() {
 });
 
 
+module.exports.popular = popularUploads;
+
+
