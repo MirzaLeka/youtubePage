@@ -609,7 +609,6 @@ height: 210px;
 	background: #333;
   z-index: 5;
 	background: -moz-linear-gradient(#444, #111); 
-        background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));	
 	background: -webkit-linear-gradient(#444, #111);	
 	background: -o-linear-gradient(#444, #111);
 	background: -ms-linear-gradient(#444, #111);
@@ -618,6 +617,12 @@ height: 210px;
 	-webkit-box-shadow: 0 2px 1px #9c9c9c;
 	box-shadow: 0 2px 1px #9c9c9c;
 }
+
+.menu-trigger{
+display: none;  
+}
+
+
 
 #menu li{
 	float: left;
@@ -647,6 +652,29 @@ height: 210px;
 #menu li:hover > ul{
 	display: block;
 }
+
+
+@media screen and (max-width: 800px) {
+
+#menu a{
+	padding: 0 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 660px) {
+
+.menu-trigger{
+  display: block;
+}
+
+.navbarLi{
+  display: none;
+   }
+
+}
+
 
 /* Sub-menu */
 

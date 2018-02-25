@@ -262,6 +262,15 @@ $("#wd").click(function() {
 });
 
 
-module.exports.popular = popularUploads;
+//module.exports.popular = popularUploads;
 
+/* NAVBAR Scroll 
 
+	$(".menu-trigger").click(function() {
+		
+		$(".nav-menu").slideToggle(400, function() {
+			$(this).toggleClass("nav-expanded").css('display', '');
+		});
+		
+	});
+*/
