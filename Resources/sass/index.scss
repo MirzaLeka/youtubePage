@@ -1,0 +1,824 @@
+body, .container, .jumbotron{
+    background: white;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
+/* Variables */
+
+$mainBlue :   #0366d6;
+$profileBlue : #008CBA;
+
+/* Mixins */
+
+@mixin shadowBottom($top, $down, $left, $right, $color){
+box-shadow: $top $down $left $right $color;
+}
+
+@mixin shadowAround($top, $down, $left, $right, $color){
+ -webkit-box-shadow: $top $down $left $right $color;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+ -moz-box-shadow:    $top $down $left $right $color;  /* Firefox 3.5 - 3.6 */
+ box-shadow:         $top $down $left $right $color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */   
+}
+
+#header{
+  background: url("../img/headerCoverBlur.jpg") no-repeat center center;
+    width: 100%;
+    padding: 20px 10px 60px 10px;
+    height: 100vh; 
+    overflow: hidden;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  line-height: 90vh;
+   text-align: center;
+ /*  -webkit-filter: blur(12px);
+  -moz-filter: blur(12px);
+  -o-filter: blur(12px);
+  -ms-filter: blur(12px); 
+  filter: blur(12px); */
+}
+
+#recentUploads, #originalSeries, #getConnect{
+    width: 100%;
+  /*  padding: 20px 10px 60px 10px; */
+    overflow: hidden;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    border-bottom: 2px solid $mainBlue;
+}
+
+#meetTheCrew{
+   height: 100vh;  
+}
+
+#recentUploads{
+background: url("../img/videoeditorCoverBlur.jpg")  no-repeat center center;
+ background-size: 100% 1200px;
+}
+
+#originalSeries{
+background: url("../img/virtualdjCoverBlur.jpg")  no-repeat center center;
+background-size: 100% 1200px;
+}
+
+#getConnect{
+background: url("../img/photoshopCoverBlur.jpg")  no-repeat center center;
+background-size: 100% 600px;
+}
+
+#listOfRecentVideos{
+  background: white;
+}
+
+.pause{
+text-align: center;
+width: 100%;
+height: 100px;
+}
+
+.idea{
+  text-align: center;
+  margin-top: 10px;
+}
+
+h1{
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 75px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+     -webkit-text-fill-color: white;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+#mainTitle{
+  font-size: 84px;
+}
+
+.contentHeader{
+  text-align: center;
+ width: 100%;
+}
+
+.contentTitle {
+  border-bottom: 2px solid red;
+  text-align: center;
+  width: 250px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.contentSubtitle{
+   color: white; 
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.pause{
+  width: 100%;
+  background: white;
+}
+
+
+.profileDiv{
+  width: 300px;
+  height: 365px;
+  background: $profileBlue;
+  cursor: pointer;
+ @include shadowBottom(0, 8px, 6px, -6px, #000); 
+}
+
+@media screen and (max-width: 991px) {
+
+ .profileDiv{
+  width: 200px;
+  height: 345px;
+  }
+
+  .profileDesc{
+  height: 45px;
+}
+
+.profilePicDiv .profilePic {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.overlay {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+.overlayProfileDesc {
+  color: #111;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+}
+
+.profileDesc{
+  height: 65px;
+}
+
+.profilePicDiv .profilePic {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3.5%;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $profileBlue;
+}
+
+.profileDiv:hover .overlay {
+  opacity: 0.75;
+}
+
+.overlayProfileDesc {
+  color: #111;
+  font-size: 14px;
+  text-align: center;
+}
+
+.aboutUs{
+  font-size: 14px !important;
+  padding: 15px;
+  @include shadowAround(3px, 3px, 5px, 3px, #aaa);
+}
+
+
+.recentUploads{
+  height: 300px;
+  border: 1px solid #aaa;
+  @include shadowBottom(0, 8px, 6px, -6px, #000);
+}
+
+#listOfRecentVideos{
+  width: 100%; 
+  overflow: auto;
+}
+
+
+.listLi{
+  list-style-type: none;
+  height: 75px;
+  width: 100%;  
+  cursor: pointer;
+@include shadowAround(1px, 1px, 1px, 1px, #aaa); 
+
+&:hover{
+  @include shadowAround(3px, 3px, 5px, 3px, #aaa); 
+}
+
+}
+
+.listLi:hover .innerLi{
+   color: $mainBlue;
+}
+
+
+.listLi:hover .listImg{
+    @include shadowAround(3px, 3px, 5px, 0, #aaa);
+}
+
+.listImg {
+  float: left;
+  width: 25%px;
+  height: 75px;
+  @include shadowAround(1px, 1px, 1px, 1px, #aaa); 
+}
+
+.innerUl{
+  padding-top:25px;
+  list-style-type: none;
+}
+
+.innerLi{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a{
+  text-decoration: none !important;
+  color: black;
+}
+
+.popularTitle{
+  background: white;
+  height: 75px;
+  text-align: center;
+  padding-top: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.hey{
+    cursor: pointer;
+}
+
+.popularDiv:hover .popularTitle{
+color: $mainBlue !important;
+}
+
+
+.popularDiv .popularImg {
+  float: left;
+  width: 100px;
+  height: 75px;
+}
+
+
+
+.learnMore{
+  cursor: pointer;
+  color: #FFF !important;
+  border-radius: 2px;
+  background: $mainBlue;
+  margin-bottom: 5px;
+  opacity: 0.8;
+  transition: 0.3s;
+
+&:hover{
+  color: #FFF !important;
+  opacity: 1;
+}
+
+&:active{
+  color: #FFF !important;
+}
+
+
+}
+
+
+
+
+.carousel-indicators{
+  z-index: 1;
+ /* position: absolute;
+  bottom: 4% !important;*/
+}
+
+.carousel-caption{
+/*  position: absolute;
+  bottom: 0% !important; */
+}
+
+.storiesPic{
+  height: 150px;
+  width: 100%;
+@include shadowAround(3px, 3px, 5px, 3px, #aaa);
+}
+
+.secondRow, .thirdRow{
+height: 210px;
+}
+
+/* slider */
+
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ISPOD SU Get in Touch kartice */
+
+/* perspective */
+
+.flip-container {
+  perspective: 1000;
+  margin: 10px;
+  float: left;
+}
+/* turning on hover */
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 20px;
+}
+/* flipping speed here */
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+/* making the the other side hidden while flipping */
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* front side is in front of a back side */
+
+.front {
+  z-index: 2;
+  background-color: tomato;
+  color: white;
+}
+
+.twitterBlue{
+  background-color: #1DA1F2;
+}
+
+/* back side */
+
+.back {
+  transform: rotateY(180deg);
+  background-color: lightblue;
+}
+
+.back p {
+  font-size: 18px;
+  margin-top: 0px;
+  font-family: 'Kaushan Script', cursive;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #333;
+  color: white;
+}
+
+
+
+/* SNACKBAR / TOAST */
+
+#snackbar {
+  background: #333;
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    color: #FFF;
+    text-align: center;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 25px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+.footer{
+  height: 20vh;
+  width: 100%;
+  text-align: center;
+  background: #111;
+}
+
+
+/* WHERE DO WE GO NEXT */
+
+.img{
+  height: 345px !important;
+}
+
+.panel-heading:hover {
+    cursor:pointer;
+}
+.panel-heading {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+.side-tab:hover {
+        cursor: pointer;
+    }
+    
+    .panel.panel-default {
+        border: none;
+        box-shadow: none !important;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        
+    }
+
+    .panel-heading {
+        border: none;
+        background-color: $mainBlue;
+    }
+    .panel-heading:hover{
+      background-color: #0050aa;
+    }
+
+    .panel-body {
+        background-color: #eee;
+        @include shadowBottom(0, 8px, 6px, -6px, #000);
+    }
+    .panel-title {
+        font-weight: 400;
+        color: white;
+    }
+
+/*----------------------------------
+    Macbook pro mockup from:
+    http://jaredhardy.com/minimal-devices/
+    
+----------------------------------*/
+
+.md-macbook-pro {
+  display: block;
+  width: 55.3125em;
+  height: 31.875em;
+  font-size: 13px;
+  margin: 0 auto;
+
+}
+
+
+
+  @media (max-width:1199px){
+    font-size: 11px;
+  }
+  @media (max-width:1024px){
+    font-size: 10px;
+  }
+
+  @media (max-width:767px){
+    font-size: 7px;
+  }
+
+  @media (max-width:320px){
+    font-size: 5px;
+  }
+
+
+.md-macbook-pro .md-lid {
+  width: 45em;
+  height: 30.625em;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 1.875em;
+  border: solid 0.1875em #cdced1;
+  background: #131313;
+}
+.md-macbook-pro .md-camera {
+  width: 0.375em;
+  height: 0.375em;
+  margin: 0 auto;
+  position: relative;
+  top: 1.0625em;
+  background: #000;
+  border-radius: 100%;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+}
+.md-macbook-pro .md-camera:after {
+  content: "";
+  display: block;
+  width: 0.125em;
+  height: 0.125em;
+  position: absolute;
+  left: 0.125em;
+  top: 0.0625em;
+  background: #353542;
+  border-radius: 100%;
+}
+.md-macbook-pro .md-screen {
+  width: 42.25em;
+  height: 26.375em;
+  margin: 0 auto;
+  position: relative;
+  top: 2.0625em;
+  background: #fff;
+  overflow: hidden;
+}
+.md-macbook-pro .md-screen img {
+  width: 100%;
+}
+.md-macbook-pro .md-base {
+  width: 100%;
+  height: 0.9375em;
+  position: relative;
+  top: -0.75em;
+  background: #c6c7ca;
+}
+.md-macbook-pro .md-base:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5em;
+  margin: 0 auto;
+  position: relative;
+  bottom: -0.1875em;
+  background: #b9babe;
+  border-radius: 0 0 1.25em 1.25em;
+}
+.md-macbook-pro .md-base:before {
+  content: "";
+  display: block;
+  width: 7.6875em;
+  height: 0.625em;
+  margin: 0 auto;
+  position: relative;
+  background: #a6a8ad;
+  border-radius: 0 0 0.625em 0.625em;
+}
+.md-macbook-pro.md-glare .md-lid:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 1.25em 0 0;
+  background: -webkit-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: -moz-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: -o-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+}
+
+/* NAVBAR */
+
+/* Main */
+#menu{
+	width: 100%;
+	margin: 0;
+	padding: 10px 0 0 0;
+  position: fixed;
+	list-style: none;  
+	background: #333;
+  z-index: 5;
+	background: -moz-linear-gradient(#444, #111); 
+	background: -webkit-linear-gradient(#444, #111);	
+	background: -o-linear-gradient(#444, #111);
+	background: -ms-linear-gradient(#444, #111);
+	background: linear-gradient(#444, #111);
+	-moz-box-shadow: 0 2px 1px #9c9c9c;
+	-webkit-box-shadow: 0 2px 1px #9c9c9c;
+	box-shadow: 0 2px 1px #9c9c9c;
+}
+
+.menu-trigger{
+display: none;  
+}
+
+
+
+#menu li{
+	float: left;
+	padding: 0 0 10px 0;
+	position: relative;
+}
+
+#menu a{
+	float: left;
+	height: 25px;
+	padding: 0 25px;
+	color: #999;
+	text-transform: uppercase;
+	font: bold 12px/25px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+	color: #fafafa;
+}
+
+ #menu li a:hover{ /* IE6 */
+	color: #fafafa;
+}
+
+#menu li:hover > ul{
+	display: block;
+}
+
+
+@media screen and (max-width: 800px) {
+
+#menu a{
+	padding: 0 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 660px) {
+
+.menu-trigger{
+  display: block;
+}
+
+.navbarLi{
+  display: none;
+   }
+
+}
+
+
+/* Sub-menu */
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 6;    
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);	
+    background: -ms-linear-gradient(#444, #111);	
+    background: linear-gradient(#444, #111);	
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+#menu ul a{    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+ #menu ul a{ /* IE6 */   
+	height: 10px;
+	width: 150px;
+}
+
+#menu:first-child #menu ul a{ /* IE7 */    
+	height: 10px;
+	width: 150px;
+}
+
+#menu ul a:hover{
+        background: #0186ba;
+}
+
+#menu ul li:first-child a{
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec; 
+}
+
+#menu ul li:last-child a{
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+ #menu             { zoom: 1; } /* IE6 */
+#menu:first-child #menu { zoom: 1; } /* IE7 */
+#menu > li:last-child
+{
+    float:right;
+}
+
