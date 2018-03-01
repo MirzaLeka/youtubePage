@@ -58,7 +58,7 @@ function popularUploads(){
   "Suicide Squad - Purple Lamborghini",
   "Project IGi Launch Trailer",
   "Despicable Me 2 / Eminem - Without Me",
-  "Rainbow Six Siege - Battlefield Hardline: Into the jungle",
+  "Rainbow Six Siege | Battlefield Hardline: Into the jungle",
   "Fast & Furious 6 and Bad Meets Evil-\"Fast Lane\"",
   "Medal of Honor Allied Assault Secrets and Funny Moments",
   "Black Leg Sanji | One Piece [AMV] - I'll Be Gone",
@@ -278,9 +278,9 @@ $("#wd").click(function() {
 /* FULL SCREEN OVERLAY */
 
 function openNav() {
-    document.getElementById("myNav").style.height = "100%";
+    document.getElementById("myNav").style.display = "block";
 }
 
 function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav").style.display = "none";
 }
