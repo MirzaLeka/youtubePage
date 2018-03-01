@@ -264,7 +264,7 @@ $("#wd").click(function() {
 
 //module.exports.popular = popularUploads;
 
-/* NAVBAR Scroll 
+/* NAVBAR sub-menu Scroll down
 
 	$(".menu-trigger").click(function() {
 		
@@ -274,3 +274,13 @@ $("#wd").click(function() {
 		
 	});
 */
+
+/* FULL SCREEN OVERLAY */
+
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
