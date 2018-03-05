@@ -25,6 +25,7 @@ box-shadow: $top $down $left $right $color;
     background: url("../img/headerCoverBlur.jpg") no-repeat center center;
     width: 100%;
     padding: 20px 10px 60px 10px;
+    background-attachment: fixed;
     height: 100vh; 
     overflow: hidden;
     background-size: cover;
@@ -57,17 +58,20 @@ box-shadow: $top $down $left $right $color;
 
 #recentUploads{
 background: url("../img/videoeditorCoverBlur.jpg")  no-repeat center center;
- background-size: 100% 1200px;
+background-attachment: fixed;
+ //background-size: 100% 1200px;
 }
 
 #originalSeries{
 background: url("../img/virtualdjCoverBlur.jpg")  no-repeat center center;
-background-size: 100% 1200px;
+background-attachment: fixed;
+//background-size: 100% 1200px;
 }
 
 #getConnect{
 background: url("../img/photoshopCoverBlur.jpg")  no-repeat center center;
-background-size: 100% 600px;
+background-attachment: fixed;
+//background-size: 100% 600px;
 }
 
 #listOfRecentVideos{
@@ -266,6 +270,7 @@ a{
 }
 
 .popularTitle{
+  font-size: 18px;
   background: white;
   height: 75px;
   text-align: center;
@@ -273,6 +278,25 @@ a{
   margin-bottom: 30px;
   box-shadow: 0 8px 6px -6px black;
 }
+
+ @media (max-width:1200px){
+ .popularTitle{
+  font-size: 14px;
+} 
+  } 
+
+   @media (max-width:768px){
+ .popularTitle{
+  font-size: 18px;
+} 
+  } 
+
+   @media (max-width:415px){
+ .popularTitle{
+  font-size: 14px;
+} 
+  } 
+
 
 .hey{
     cursor: pointer;
@@ -285,7 +309,7 @@ color: $mainBlue !important;
 
 .popularDiv .popularImg {
   float: left;
-  width: 100px;
+  width: 35%;
   height: 75px;
 }
 
@@ -710,6 +734,10 @@ display: none;
 
 .navbarLi{
   display: none;
+   }
+
+   #menu{
+     padding-left: -100px;
    }
 
 }
