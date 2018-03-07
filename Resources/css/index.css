@@ -34,7 +34,7 @@ body, .container, .jumbotron {
   border-bottom: 2px solid #0366d6; }
 
 #meetTheCrew {
-  height: 100vh; }
+  height: 100%; }
 
 #recentUploads {
   background: url("../img/videoeditorCoverBlur.jpg") no-repeat center center;
@@ -102,10 +102,10 @@ h1 {
   cursor: pointer;
   box-shadow: 0 8px 6px -6px #000; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .profileDiv {
     width: 200px;
-    height: 345px; }
+    height: 260px; }
 
   .profileDesc {
     height: 45px; }
@@ -113,17 +113,44 @@ h1 {
   .profilePicDiv .profilePic {
     display: block;
     width: 100%;
-    height: 200px; }
+    height: 200px !important; }
 
   .overlay {
-    height: 200px;
-    width: 200px;
-    background-color: red; }
+    width: 200px !important;
+    height: 200px !important;
+    margin-top: -275px !important; }
 
   .overlayProfileDesc {
     color: #111;
-    font-size: 10px;
-    text-align: center; } }
+    font-size: 10px !important;
+    text-align: center;
+    padding-top: 15px !important; } }
+@media screen and (max-width: 768px) {
+  .profileDiv {
+    width: 235px;
+    height: 260px; }
+
+  #profileMirza {
+    margin-top: 30px; }
+
+  .profileDesc {
+    height: 45px; }
+
+  .profilePicDiv .profilePic {
+    display: block;
+    width: 100%;
+    height: 200px !important; }
+
+  .overlay {
+    width: 235px !important;
+    height: 200px !important;
+    margin-top: -275px !important; }
+
+  .overlayProfileDesc {
+    color: #111;
+    font-size: 10px !important;
+    text-align: center;
+    padding-top: 15px !important; } }
 .profileDesc {
   height: 65px; }
 
@@ -133,11 +160,12 @@ h1 {
   height: 300px; }
 
 .overlay {
-  position: absolute;
+  margin-top: -375px;
+  /*position: absolute;
   top: 0;
   bottom: 0;
   left: 3.5%;
-  right: 0;
+  right: 0;*/
   height: 300px;
   width: 300px;
   opacity: 0;
@@ -150,7 +178,8 @@ h1 {
 .overlayProfileDesc {
   color: #111;
   font-size: 14px;
-  text-align: center; }
+  text-align: center;
+  padding-top: 25px; }
 
 .aboutUs {
   font-size: 14px !important;
