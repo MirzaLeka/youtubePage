@@ -5,7 +5,7 @@ body, .container, .jumbotron {
 /* Variables */
 /* Mixins */
 #header {
-  background: url("../img/headerCoverBlur.jpg") no-repeat center center;
+  background: url("../img/city.jpg") no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
   background-attachment: fixed;
@@ -74,6 +74,14 @@ h1 {
 #mainTitle {
   font-size: 84px; }
 
+/* Need to test on other devices to be 100% sure
+@media (max-width:768px) {
+
+  #mainTitle{
+    font-size: 48px;
+  }
+
+} */
 .contentHeader {
   text-align: center;
   width: 100%; }
@@ -184,12 +192,7 @@ h1 {
 .aboutUs {
   font-size: 14px !important;
   padding: 15px;
-  -webkit-box-shadow: 3px 3px 5px 3px #aaa;
-  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 3px 3px 5px 3px #aaa;
-  /* Firefox 3.5 - 3.6 */
-  box-shadow: 3px 3px 5px 3px #aaa;
-  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+  box-shadow: 0 8px 6px -6px #000; }
 
 .recentUploads {
   height: 300px;
@@ -311,13 +314,14 @@ a {
 .storiesPic {
   height: 150px;
   width: 100%;
-  -webkit-box-shadow: 3px 3px 5px 3px #aaa;
-  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 3px 3px 5px 3px #aaa;
-  /* Firefox 3.5 - 3.6 */
-  box-shadow: 3px 3px 5px 3px #aaa;
-  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+  box-shadow: 0 8px 6px -6px #000; }
 
+@media (max-width: 768px) {
+  .storiesBox {
+    margin-top: 20px; }
+
+  .storiesBox:first-child {
+    margin-top: 0px; } }
 .secondRow, .thirdRow {
   height: 210px; }
 
@@ -491,13 +495,21 @@ a {
   margin: 0 auto; }
 
 @media (max-width: 1199px) {
-  font-size: 11px; }
+  .md-macbook-pro {
+    width: 45%;
+    height: 26%; } }
 @media (max-width: 1024px) {
-  font-size: 10px; }
+  .md-macbook-pro {
+    width: 40%;
+    height: 22%; } }
 @media (max-width: 767px) {
-  font-size: 7px; }
+  .md-macbook-pro {
+    width: 30%;
+    height: 18%; } }
 @media (max-width: 320px) {
-  font-size: 5px; }
+  .md-macbook-pro {
+    width: 18%;
+    height: 5%; } }
 .md-macbook-pro .md-lid {
   width: 45em;
   height: 30.625em;

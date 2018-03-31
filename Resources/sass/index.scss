@@ -22,7 +22,7 @@ box-shadow: $top $down $left $right $color;
 }
 
 #header{
-    background: url("../img/headerCoverBlur.jpg") no-repeat center center;
+    background: url("../img/city.jpg") no-repeat center center;
     width: 100%;
     padding: 20px 10px 60px 10px;
     background-attachment: fixed;
@@ -101,9 +101,19 @@ h1{
    -webkit-text-stroke-color: black;
 }
 
+
 #mainTitle{
   font-size: 84px;
 }
+
+/* Need to test on other devices to be 100% sure
+@media (max-width:768px) {
+
+  #mainTitle{
+    font-size: 48px;
+  }
+
+} */
 
 .contentHeader{
   text-align: center;
@@ -248,7 +258,7 @@ h1{
 .aboutUs{
   font-size: 14px !important;
   padding: 15px;
-  @include shadowAround(3px, 3px, 5px, 3px, #aaa);
+  @include shadowBottom(0, 8px, 6px, -6px, #000);
 }
 
 
@@ -361,9 +371,6 @@ color: $mainBlue !important;
   } 
 
 
-
-
-
 .learnMore{
   cursor: pointer;
   color: #FFF !important;
@@ -386,8 +393,6 @@ color: $mainBlue !important;
 }
 
 
-
-
 .carousel-indicators{
   z-index: 1;
  /* position: absolute;
@@ -402,8 +407,20 @@ color: $mainBlue !important;
 .storiesPic{
   height: 150px;
   width: 100%;
-@include shadowAround(3px, 3px, 5px, 3px, #aaa);
+  @include shadowBottom(0, 8px, 6px, -6px, #000);
 }
+
+@media (max-width:768px){
+
+  .storiesBox {
+   margin-top: 20px;
+  }
+
+  .storiesBox:first-child {
+    margin-top: 0px;
+   }
+    
+    }
 
 .secondRow, .thirdRow{
 height: 210px;
@@ -608,18 +625,40 @@ height: 210px;
 
 
   @media (max-width:1199px){
-    font-size: 11px;
+
+.md-macbook-pro {
+    width: 45%;
+  height: 26%;
+}
+  
   }
+
+
   @media (max-width:1024px){
-    font-size: 10px;
+
+.md-macbook-pro {
+      width: 40%;
+  height: 22%;
+}
+
   }
 
   @media (max-width:767px){
-    font-size: 7px;
+
+    .md-macbook-pro {
+      width: 30%;
+  height: 18%;
+  }
+
   }
 
   @media (max-width:320px){
-    font-size: 5px;
+
+    .md-macbook-pro {
+      width: 18%;
+  height: 5%;
+}
+      
   }
 
 
