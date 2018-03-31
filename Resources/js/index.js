@@ -275,6 +275,11 @@ $("#wd").click(function() {
 	});
 */
 
+$(".openOverlay").click(() => {
+alert("Work in progress");
+
+});
+
 /* FULL SCREEN OVERLAY */
 
 function openNav() {
