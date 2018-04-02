@@ -21,6 +21,7 @@
 /* positioning */
 .outerNavUl {
   position: fixed;
+  top: -165;
   left: 0; }
 
 .innerNavUl {
