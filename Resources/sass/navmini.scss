@@ -1,0 +1,57 @@
+
+
+/* MINI NAVBAR */
+
+.outerNavUl, .innerNavUl{
+    list-style-type: none;
+    background: #111;
+    padding: 0;
+    display: none;
+}
+
+.outerNavLi, .innerNavLi{
+    color: #ccc;
+}
+
+.outerNavLi{
+    background: red;
+    width: 120px;
+}
+
+
+.outerNavLi:hover, .innerNavLi:hover{
+    color: #FFF;
+}
+
+#projectsLi:hover .innerNavUl{
+    display: block;
+}
+
+/* positioning */
+
+.outerNavUl{
+    position: fixed;
+    left: 0;
+}
+
+.innerNavUl{
+    position: absolute;
+    margin-left: 120px;
+    top: 0px;
+    background: red;
+    padding: 0px;
+    display: none;
+    width: 150px;
+    
+}
+
+/*     TRIGGER      */
+
+
+button{
+    color: #aaa;
+    border: 2px solid #333;
+    z-index: 1;
+}
+
+/* stavi ako je sirina ispod 500px da se innerNavLi pojavljuje ispod sa position: relative */ 

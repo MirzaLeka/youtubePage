@@ -25,16 +25,42 @@
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <!-- index.css -->
   <link rel="stylesheet" href="../Resources/css/index.css">
+  <link rel="stylesheet" href="../Resources/css/navmini.css">
   <!-- Tab Icon -->
   <link rel="icon" type="image/gif" href="tabIcon.png" />
 
 </head>
 
 <body>
+
+  
+<!-- MINI NAVBAR -->
+
+<ul class="outerNavUl">
+
+    <li class="outerNavLi">Home</li>
+    <li class="outerNavLi">Meet the crew</li>
+    <li id="projectsLi" class="outerNavLi">Projects <i class="fa fa-chevron-right"></i>
+    
+    <ul class="innerNavUl">
+    
+        <li class="innerNavLi">Recent uploads</li>
+        <li class="innerNavLi">Popular uploads</li>
+        <li class="innerNavLi">Original series</li>
+        <li class="innerNavLi">Where do we go next</li>
+    
+    </ul>
+    
+    </li>
+    <li class="outerNavLi">Stories we share</li>
+    <li class="outerNavLi">Get in touch</li>
+    
+    
+    </ul>
   
 
   <ul id="menu">
-    <li class="menu-trigger" ><a>
+    <li id="openMiniNav" class="menu-trigger" ><a>
       <i class="fa fa-bars" aria-hidden="true" style="font-size: 24px; cursor: pointer;"></i>
       </a></li> 
     <li class="navbarLi"><a href="#" id="home">Home</a></li>
@@ -706,6 +732,8 @@ Next episode in the series brings Payday, Grand Theft Auto and Call of Duty into
   </div>
 </div>
 
+
+
 <!-- /OVERLAY -->
 
 
@@ -720,8 +748,7 @@ Next episode in the series brings Payday, Grand Theft Auto and Call of Duty into
 </script>
 
 <!-- index.js -->
-<script src="../Resources/js/index.js">
-
-</script>
+<script src="../Resources/js/index.js"></script>
+<script src="../Resources/js/navmini.js"></script>
 
 </html>
