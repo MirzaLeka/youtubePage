@@ -3,7 +3,8 @@
   list-style-type: none;
   background: #111;
   padding: 0;
-  display: none; }
+  z-index: 2;
+  cursor: pointer; }
 
 .outerNavLi, .innerNavLi {
   color: #ccc; }
@@ -21,7 +22,7 @@
 /* positioning */
 .outerNavUl {
   position: fixed;
-  top: -165;
+  top: -65px;
   left: 0; }
 
 .innerNavUl {
