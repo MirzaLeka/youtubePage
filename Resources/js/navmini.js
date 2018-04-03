@@ -6,7 +6,7 @@ $("#openMiniNav").click(() => {
     if (navActive) {
       
         $(".outerNavUl").animate({
-            top: -65
+            top: -120
         },800);
         
         navActive = false;

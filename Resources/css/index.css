@@ -74,7 +74,7 @@ h1 {
 #mainTitle {
   font-size: 84px; }
 
-@media (max-width: 768px) {
+@media (max-width: 660px) {
   #mainTitle {
     font-size: 48px; } }
 .contentHeader {

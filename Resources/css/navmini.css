@@ -1,45 +1,67 @@
 /* MINI NAVBAR */
+@media (min-width: 660px) {
+  .outerNavUl {
+    display: none; } }
 .outerNavUl, .innerNavUl {
   list-style-type: none;
-  background: #111;
   padding: 0;
   z-index: 2;
+  background: #333;
+  background: -moz-linear-gradient(#444, #111);
+  background: -webkit-linear-gradient(#444, #111);
+  background: -o-linear-gradient(#444, #111);
+  background: -ms-linear-gradient(#444, #111);
+  background: linear-gradient(#444, #111);
+  -moz-box-shadow: 0 2px 1px #9c9c9c;
+  -webkit-box-shadow: 0 2px 1px #9c9c9c;
+  box-shadow: 0 2px 1px #9c9c9c;
   cursor: pointer; }
 
-.outerNavLi, .innerNavLi {
-  color: #ccc; }
+.outerNavLi a, .innerNavLi a {
+  color: #999;
+  font: bold 12px/25px Arial, Helvetica; }
 
 .outerNavLi {
-  background: red;
-  width: 120px; }
+  width: 140px;
+  padding-left: 10px;
+  text-transform: uppercase; }
 
-.outerNavLi:hover, .innerNavLi:hover {
+.outerNavLi:hover .outerNavLiAnchor {
+  color: #FFF; }
+
+.innerNavLi:hover .innerNavLiAnchor {
   color: #FFF; }
 
 #projectsLi:hover .innerNavUl {
   display: block; }
 
+.innerNavLi {
+  padding-top: 5.5px;
+  width: 160px;
+  padding-left: 10px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #444; }
+  .innerNavLi:hover {
+    background: #0186ba; }
+
+.innerNavLi:last-child {
+  border-bottom: none; }
+
 /* positioning */
 .outerNavUl {
   position: fixed;
-  top: -65px;
+  top: -120px;
   left: 0; }
 
 .innerNavUl {
   position: absolute;
-  margin-left: 120px;
+  margin-left: 130px;
   top: 0px;
-  background: red;
   padding: 0px;
   display: none;
-  width: 150px; }
+  border-right: 2px solid #9c9c9c; }
 
-/*     TRIGGER      */
-button {
-  color: #aaa;
-  border: 2px solid #333;
-  z-index: 1; }
-
-/* stavi ako je sirina ispod 500px da se innerNavLi pojavljuje ispod sa position: relative */
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=navmini.css.map */

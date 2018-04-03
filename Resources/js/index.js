@@ -185,7 +185,7 @@ window.open("mailto:nxc-production@live.com");
 
 // Home
 
-$("#home").click( function() {
+$(".home").click( function() {
   
   	$("html, body").animate({ scrollTop: 0 }, 1000);
   
@@ -193,7 +193,7 @@ $("#home").click( function() {
 
 // Crew
 
-$("#cr").click(function() {
+$(".cr").click(function() {
     $('html, body').animate({
         scrollTop: $("#meetTheCrew").offset().top
     }, 1000);
@@ -201,7 +201,7 @@ $("#cr").click(function() {
 
 // Projects
 
-$("#pr").click(function() {
+$(".pr").click(function() {
     $('html, body').animate({
         scrollTop: $("#projects").offset().top
     }, 1000);
@@ -209,7 +209,7 @@ $("#pr").click(function() {
 
 // Stories
 
-$("#st").click(function() {
+$(".st").click(function() {
     $('html, body').animate({
         scrollTop: $("#stories").offset().top
     }, 1000);
@@ -218,7 +218,7 @@ $("#st").click(function() {
 
 // Get in touch
 
-$("#gt").click(function() {
+$(".gt").click(function() {
     $('html, body').animate({
         scrollTop: $("#getInTouch").offset().top
     }, 1000);
@@ -228,7 +228,7 @@ $("#gt").click(function() {
 
 // Recent Uploads
 
-$("#ru").click(function() {
+$(".ru").click(function() {
     $('html, body').animate({
         scrollTop: $("#scrollRu").offset().top
     }, 1000);
@@ -237,7 +237,7 @@ $("#ru").click(function() {
 
 // Popular Uploads
 
-$("#pu").click(function() {
+$(".pu").click(function() {
     $('html, body').animate({
         scrollTop: $("#scrollPu").offset().top
     }, 1000);
@@ -246,7 +246,7 @@ $("#pu").click(function() {
 
 // Original Series
 
-$("#os").click(function() {
+$(".os").click(function() {
     $('html, body').animate({
         scrollTop: $("#scrollOs").offset().top
     }, 1000);
@@ -255,7 +255,7 @@ $("#os").click(function() {
 
 // Where do we go next
 
-$("#wd").click(function() {
+$(".wd").click(function() {
     $('html, body').animate({
         scrollTop: $("#scrollWd").offset().top
     }, 1000);
