@@ -50,6 +50,26 @@
     display: block;
 }
 
+//This will display the arrow to the right
+#innerNavLiProjects::after{
+    content: "  \25b6";
+}
+
+// If width is less then 320px, I don't want inner Ul to overlapp, so I'll just not display it
+@media (max-width:320px) {
+
+    #projectsLi:hover .innerNavUl{
+        display: none;
+    }
+
+// I want to remove that arrow because inner Ul will be gone and no need to point if there's nothing to show
+    #innerNavLiProjects:after{
+        content: "";
+    }
+    
+}
+    
+
 .innerNavLi{
     padding-top: 5.5px;
     width: 160px;
