@@ -1,24 +1,44 @@
 
 var navActive = false;
 
+// Functions
+
+const closeMiniNavbar = () => {
+
+    $(".outerNavUl").animate({
+        top: -120
+    },600);
+    
+    navActive = false;
+
+};
+
+const openMiniNavbar = () => {
+
+    $(".outerNavUl").animate({
+        top: 45
+    },600);
+    
+    
+    navActive = true;
+
+};
+
+// Trigger
+
 $("#openMiniNav").click(() => {
  
     if (navActive) {
-      
-        $(".outerNavUl").animate({
-            top: -120
-        },800);
-        
-        navActive = false;
+        closeMiniNavbar();
     }
     else {
-
-        $(".outerNavUl").animate({
-            top: 45
-        },800);
-        
-        
-        navActive = true;
+        openMiniNavbar();  
     }
+
+});
+
+$("div").click(() => {
+
+    closeMiniNavbar();  
 
 });

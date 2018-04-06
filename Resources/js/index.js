@@ -5,6 +5,24 @@ recentUploads();
 
 popularUploads();
 
+/* NAVBAR scroll - not in use */
+
+//$("#menu, .outerNavUl").hide();
+
+    /*
+    $(function () {
+        $(window).scroll(function () {
+
+          
+            if ($(this).scrollTop() > 300) {
+                $('#menu, .outerNavUl').fadeIn();
+            } else {
+                $('#menu, .outerNavUl').fadeOut();
+            }
+        });
+    });*/
+
+
 });
 
 /* Recent uploads */

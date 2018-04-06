@@ -1,8 +1,12 @@
 /* MINI NAVBAR */
+#openMiniNav {
+  cursor: pointer; }
+
 @media (min-width: 660px) {
   .outerNavUl {
     display: none; } }
 .outerNavUl, .innerNavUl {
+  height: 125px;
   list-style-type: none;
   padding: 0;
   z-index: 2;
@@ -45,7 +49,7 @@
   #innerNavLiProjects:after {
     content: ""; } }
 .innerNavLi {
-  padding-top: 5.5px;
+  padding-top: 3.5%;
   width: 160px;
   padding-left: 10px;
   text-transform: capitalize;
