@@ -115,6 +115,14 @@ h1{
 
 } 
 
+@media (max-width:420px) {
+
+  #mainTitle{
+    font-size: 36px;
+  }
+
+} 
+
 .contentHeader{
   text-align: center;
  width: 100%;
@@ -146,7 +154,6 @@ h1{
   width: 300px;
   height: 365px;
   background: $profileBlue;
-  cursor: pointer;
  @include shadowBottom(0, 8px, 6px, -6px, #000); 
 }
 
@@ -241,7 +248,7 @@ h1{
   width: 300px;
   opacity: 0;
   transition: .5s ease;
-  background-color: $profileBlue;
+  background-color: #90CAF9;
 }
 
 .profileDiv:hover .overlay {

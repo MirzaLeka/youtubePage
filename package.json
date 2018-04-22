@@ -1,0 +1,23 @@
+{
+  "name": "next_crew",
+  "version": "1.0.0",
+  "description": "* ###### Sony Vegas Pro \r * ###### Adobe Photoshop\r * ###### Virtual DJ\r * ###### Windows Movie Maker\r * ###### BeFunky",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirzaLeka/youtubePage.git"
+  },
+  "author": "Mirza Leka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MirzaLeka/youtubePage/issues"
+  },
+  "homepage": "https://github.com/MirzaLeka/youtubePage#readme"
+}

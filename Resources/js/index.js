@@ -8,16 +8,33 @@ popularUploads();
 /* NAVBAR scroll - not in use */
 
 //$("#menu, .outerNavUl").hide();
-
-    /*
+/*
+    
     $(function () {
         $(window).scroll(function () {
 
           
             if ($(this).scrollTop() > 300) {
-                $('#menu, .outerNavUl').fadeIn();
+
+                setTimeout(function(){ 
+                    $('#menu').css({
+
+                        background: "-moz-linear-gradient(#444, #111)",
+                        background: "-webkit-linear-gradient(#444, #111)",
+                        background: "-o-linear-gradient(#444, #111)",
+                        background: "-ms-linear-gradient(#444, #111)",
+                        background: "linear-gradient(#444, #111)",
+                        transition: "all 0.8"
+                    });
+                
+                },2000);
+
+              
             } else {
-                $('#menu, .outerNavUl').fadeOut();
+                $('#menu').css({
+                    background: "none",
+                    transition: "all 0.8s"
+                });
             }
         });
     });*/
