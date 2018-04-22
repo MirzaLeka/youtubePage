@@ -288,7 +288,7 @@ $(".os").click(function() {
 });
 
 
-// Where do we go next
+// What's next
 
 $(".wd").click(function() {
     $('html, body').animate({
@@ -297,18 +297,6 @@ $(".wd").click(function() {
 });
 
 
-//module.exports.popular = popularUploads;
-
-/* NAVBAR sub-menu Scroll down
-
-	$(".menu-trigger").click(function() {
-		
-		$(".nav-menu").slideToggle(400, function() {
-			$(this).toggleClass("nav-expanded").css('display', '');
-		});
-		
-	});
-*/
 
 $(".openOverlay").click(() => {
 alert("Work in progress");
@@ -324,3 +312,9 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.display = "none";
 }
+
+// Remove hashcode from url (when you click on nav list item anchor)
+
+$(window).on('hashchange', function(e){
+    history.replaceState ("", document.title, e.originalEvent.oldURL);
+});

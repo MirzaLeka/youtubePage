@@ -42,15 +42,15 @@
 #innerNavLiProjects::after {
   content: "  \25b6"; }
 
-@media (max-width: 320px) {
+@media (max-width: 285px) {
   #projectsLi:hover .innerNavUl {
     display: none; }
 
   #innerNavLiProjects:after {
     content: ""; } }
 .innerNavLi {
-  padding-top: 3.5%;
-  width: 160px;
+  padding-top: 4.6%;
+  width: 120px;
   padding-left: 10px;
   text-transform: capitalize;
   border-bottom: 1px solid #444; }
