@@ -42,3 +42,9 @@ $("div").click(() => {
     closeMiniNavbar();  
 
 });
+
+// Removes hashcode # from url (when you click on nav list item anchor)
+
+$(window).on('hashchange', function(e){
+    history.replaceState ("", document.title, e.originalEvent.oldURL);
+});

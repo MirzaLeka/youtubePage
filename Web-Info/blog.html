@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>N[x]C Blog</title>
+<title>Next Crew Blog</title>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,16 +13,46 @@
   <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/fe459689b4.js"></script>
-  <!-- index.css -->
-  <link rel="stylesheet" href="../Resources/css/index.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="../Resources/css/blog.css">
+  <link rel="stylesheet" href="../Resources/css/navbar.css">
+  <link rel="stylesheet" href="../Resources/css/navmini.css">
   <!-- Tab Icon -->
   <link rel="icon" type="image/gif" href="blogIcon.png" />
 
 </head>
 <body>
 
-        <div class="container" style="background-color: beige;">
-                <div class="jumbotron" style="background-color: transparent;">
+
+  <!-- MINI NAVBAR -->
+
+<ul class="outerNavUl">
+
+    <li class="outerNavLi home"><a href="#" class="outerNavLiAnchor">Top</a></li>
+    <li class="outerNavLi cr"><a href="https://www.youtube.com/c/nonyx" class="outerNavLiAnchor"> Nonyx</a></li>
+    <li id="projectsLi" class="outerNavLi"><a href="https://www.youtube.com/c/spy4er" id="innerNavLiProjects" class="outerNavLiAnchor pr"> Spy4er</a></li>
+    <li class="outerNavLi st"><a href="https://twitter.com/NONYXM3" class="outerNavLiAnchor"> Nonyx</a></li>
+    <li class="outerNavLi gt"><a href="https://twitter.com/mirzaleka" class="outerNavLiAnchor"> Spy4er</a></li>
+    
+    
+    </ul>
+  
+<!-- MAIN NAVBAR -->
+
+  <ul id="menu">
+    <li id="openMiniNav" class="menu-trigger" ><a>
+      <i class="fa fa-bars" aria-hidden="true" style="font-size: 24px; cursor: pointer;"></i>
+      </a></li> 
+    <li class="navbarLi"><a href="#" class="home">Top</a></li>
+    <li class="navbarLi"><a href="https://www.youtube.com/c/nonyx" target="_blank"><i class="fa fa-youtube-play"></i> Nonyx</a></li>
+    <li class="navbarLi"><a href="https://www.youtube.com/c/spy4er" target="_blank"><i class="fa fa-youtube-play"></i> Spy4er</a> </li>
+    <li class="navbarLi"><a href="https://twitter.com/NONYXM3" target="_blank"><i class="fa fa-twitter"></i> Nonyx</a></li>
+    <li class="navbarLi"><a href="https://twitter.com/mirzaleka" target="_blank"><i class="fa fa-twitter"></i> Spy4er</a></li>
+    <li><a id="openBlog" href="/"><b style="color: white; margin-right: 20px; text-transform: capitalize;">Home Page</b></a></li>
+  </ul>
+
+        <div class="container">
+                <div class="jumbotron">
                   <div class="row">
                     <div class="col-xs-12">
                   
@@ -35,6 +65,7 @@
         </div>
 
 </body>
-
-
+<script src="../Resources/js/blog.js"></script>
+<script src="../Resources/js/navmini.js"></script>
+<!-- <script src="../Resources/js/navbar.js"></script> -->
 </html>
