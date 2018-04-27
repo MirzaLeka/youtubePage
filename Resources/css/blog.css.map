@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,UAAU;EACN,UAAU,EAAE,KAAK;;AAGrB,UAAU;EACN,UAAU,EAAE,WAAW",
+"mappings": "AAAA,UAAU;EACN,UAAU,EAAE,KAAK;;AAGrB,UAAU;EACN,UAAU,EAAE,WAAW;;AAG3B,CAAC;EACG,eAAe,EAAE,eAAe",
 "sources": ["../sass/blog.scss"],
 "names": [],
 "file": "blog.css"
