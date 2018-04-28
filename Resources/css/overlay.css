@@ -1,0 +1,22 @@
+.videoContainer {
+  background: beige;
+  height: 100%;
+  width: 100%; }
+
+img {
+  margin-top: 10px;
+  height: 100px;
+  width: 100%; }
+
+img:first-child {
+  margin-top: 0px; }
+
+@media only screen and (max-width: 840px) {
+  img {
+    height: 300px; } }
+iframe {
+  text-align: center;
+  margin: 0 auto;
+  display: block; }
+
+/*# sourceMappingURL=overlay.css.map */
