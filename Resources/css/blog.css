@@ -1,23 +1,52 @@
-.container {
-  background: beige; }
-
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 .jumbotron {
   background: transparent; }
 
 a {
   text-decoration: none !important; }
 
+.post {
+  margin-top: 60px;
+  padding-bottom: 20px;
+  background: #eaeab4;
+  width: 100%;
+  box-shadow: 0 8px 6px -6px #000; }
+
+.postHeader {
+  padding: 10px 0;
+  text-align: center;
+  width: 100%; }
+
+.postTitle {
+  border-bottom: 2px solid red;
+  text-align: center;
+  width: 250px;
+  margin: auto;
+  padding-bottom: 10px; }
+
+.postImg {
+  height: 250px;
+  width: 100%;
+  margin: 10px 0; }
+
+.postContent {
+  font-size: 16px !important; }
+
 .footer {
-  height: 10%;
   width: 100%;
   text-align: center;
-  background: #111;
-  position: absolute;
-  bottom: 0%; }
+  background: #111; }
 
 #footerTitle {
   text-align: center;
-  color: #FFF; }
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 75px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; }
 
 @media screen and (max-width: 768px) {
   #footerTitle {
