@@ -2,7 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
+
+
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -27,8 +31,21 @@
 </head>
 <body>
 
-
 <div class="loader"></div>
+
+<div class="content">NEXT CREW Production
+</div>
+
+<script>
+
+$(function() {
+    $(".loader").fadeOut(2000, function() {
+        $(".content").fadeIn(1000);        
+    });
+});
+
+</script>
+
 
 </body>
 </html>
