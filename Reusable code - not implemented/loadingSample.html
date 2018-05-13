@@ -5,7 +5,8 @@
  <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
-
+.content{
+display: none; }
 
 .loader {
   border: 16px solid #f3f3f3;
@@ -15,6 +16,15 @@
   height: 120px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
+}
+
+.loader::after{
+content: 'NEXT CREW';
+color: #222;
+position: absolute;
+top: 35%;
+left: 30%;
+font-size: 18px;
 }
 
 /* Safari */
@@ -31,7 +41,9 @@
 </head>
 <body>
 
-<div class="loader"></div>
+<div class="loader">
+
+</div>
 
 <div class="content">NEXT CREW Production
 </div>
