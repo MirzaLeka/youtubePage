@@ -8,24 +8,30 @@
 .content{
 display: none; }
 
+.mainDiv{
+/* Positioning */
+width: 100%;
+display: flex;
+aligh-items: center;
+justify-content: center;
+flex-direction: column;
+height: 100vh;
+}
+
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #3498db;
   width: 120px;
   height: 120px;
+/* Animation */
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
+display: blocK;
+text-align: center;
+margin: 0 auto;
 }
 
-.loader::after{
-content: 'NEXT CREW';
-color: #222;
-position: absolute;
-top: 35%;
-left: 30%;
-font-size: 18px;
-}
 
 /* Safari */
 @-webkit-keyframes spin {
@@ -41,7 +47,11 @@ font-size: 18px;
 </head>
 <body>
 
+<div class="mainDiv">
+
 <div class="loader">
+
+</div>
 
 </div>
 
@@ -51,7 +61,7 @@ font-size: 18px;
 <script>
 
 $(function() {
-    $(".loader").fadeOut(2000, function() {
+    $(".mainDiv").fadeOut(2000, function() {
         $(".content").fadeIn(1000);        
     });
 });
