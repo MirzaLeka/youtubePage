@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+body {
+  background: #000; }
+
 .jumbotron {
   background: transparent; }
 
@@ -8,17 +11,17 @@ a {
 .post {
   margin-top: 60px;
   padding-bottom: 20px;
-  background: #eaeab4;
-  width: 100%;
-  box-shadow: 0 8px 6px -6px #000; }
+  background: transparent;
+  width: 100%; }
 
 .postHeader {
+  color: #AAA;
   padding: 10px 0;
   text-align: center;
   width: 100%; }
 
 .postTitle {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #FFF;
   text-align: center;
   width: 250px;
   margin: auto;
@@ -30,7 +33,8 @@ a {
   margin: 10px 0; }
 
 .postContent {
-  font-size: 16px !important; }
+  font-size: 16px !important;
+  color: #FFF; }
 
 .footer {
   width: 100%;

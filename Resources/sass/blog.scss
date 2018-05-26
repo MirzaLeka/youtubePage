@@ -5,6 +5,10 @@
   box-shadow: $top $down $left $right $color;
   }
 
+  body{
+    background: #000;
+  }
+
 .jumbotron{
    background: transparent;
 }
@@ -16,19 +20,21 @@ a{
 .post{
 margin-top: 60px; 
 padding-bottom: 20px;
-background: darken(beige, 10%);
+//background: darken(beige, 10%);
+background: transparent;
 width: 100%;
-@include shadowBottom(0, 8px, 6px, -6px, #000); 
+//@include shadowBottom(0, 8px, 6px, -6px, #CCC); 
 }
 
 .postHeader{
+ color: #AAA;
  padding: 10px 0;
  text-align: center;
  width: 100%;
 }
 
 .postTitle {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #FFF;
   text-align: center;
   width: 250px;
   margin: auto;
@@ -43,6 +49,7 @@ width: 100%;
 
 .postContent{
   font-size: 16px !important;
+  color: #FFF;
 }
 
 
