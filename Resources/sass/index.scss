@@ -21,6 +21,47 @@ box-shadow: $top $down $left $right $color;
  box-shadow:         $top $down $left $right $color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */   
 }
 
+/* LOADER */
+
+.mainDiv{
+  /* Positioning */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: #111;
+  }
+  
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+  /* Animation */
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  }
+  
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* /LOADER */
+
 #header{
     background: url("../img/city.jpg") no-repeat center center;
     width: 100%;
@@ -588,7 +629,15 @@ height: 210px;
   background: url('../img/insurgencyNext.jpg');
   height: 70vh;
   width: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all 1s;
   @include shadowBottom(0, 8px, 6px, -6px, #FFF); 
+
+  &:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
 }
 
 #upcomingDetails{

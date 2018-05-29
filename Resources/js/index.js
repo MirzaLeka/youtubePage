@@ -5,6 +5,27 @@ recentUploads();
 
 popularUploads();
 
+/* Loader */
+
+$(".fullPageContent").css({
+  display: "none"
+})
+
+$("body").css({
+  background: "#111"
+});
+
+$(function() {
+  $(".mainDiv").fadeOut(2000, function() {
+      $("#header").slideDown(1000);  
+      $("body").css({
+        background: "#FFF"
+      });      
+      $(".fullPageContent").delay(500).fadeIn(1000);  
+  });
+});
+
+/* / Loader */
 
 });
 
@@ -156,7 +177,7 @@ Well this separates code into if / else statement, if you see snackbar you can't
 
 
 
-/* NEXT CREW HEADER */
+/* NEXT CREW HEADER 
 
 var showText = function (target, message, index, interval) {   
   if (index < message.length) {
@@ -175,6 +196,9 @@ $(function () {
 
 });
 
+*/
+
+// Email Us
 
 function openEmail(){
 
