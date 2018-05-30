@@ -5,7 +5,7 @@ recentUploads();
 
 popularUploads();
 
-/* Loader 
+/* Loader  */
 
 $(".fullPageContent").css({
   display: "none"
@@ -23,7 +23,7 @@ $(function() {
       });      
       $(".fullPageContent").delay(500).fadeIn(1000);  
   });
-}); */
+});
 
 /* / Loader */
 
