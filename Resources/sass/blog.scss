@@ -7,6 +7,7 @@
 
   body{
     background: #000;
+    overflow-x: hidden; 
   }
 
   #blogHeader{
@@ -20,6 +21,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     text-align: center;
+    border-bottom: 2px solid #FFA500;
   }
 
   #blogTitle{
@@ -52,15 +54,14 @@ a{
 
 .post{
 margin-top: 60px; 
-padding-bottom: 20px;
-//background: darken(beige, 10%);
 background: transparent;
 width: 100%;
+//background: darken(beige, 10%);
 //@include shadowBottom(0, 8px, 6px, -6px, #CCC); 
 }
 
 .postHeader{
- color: #AAA;
+ color: #FFA500;
  padding: 10px 0;
  text-align: center;
  width: 100%;
@@ -74,8 +75,14 @@ width: 100%;
   padding-bottom: 10px;
 }
 
+.coverImg{
+  height: 450px;
+  width: 100%;
+  margin: 10px 0;
+}
+
 .postImg{
-  height: 250px;
+  height: 350px;
   width: 100%;
   margin: 10px 0;
 }
@@ -83,6 +90,24 @@ width: 100%;
 .postContent{
   font-size: 16px !important;
   color: #FFF;
+}
+
+.betweenPosts{
+  background: #FFA500;
+  background-size: 100% 10vh;
+  height: 100px;
+}
+
+.betweenTitle{
+  color: #FFF;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 

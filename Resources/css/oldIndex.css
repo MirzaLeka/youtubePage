@@ -4,6 +4,43 @@ body, .container, .jumbotron {
 
 /* Variables */
 /* Mixins */
+/* LOADER */
+.mainDiv {
+  /* Positioning */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: #111; }
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  /* Animation */
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+/* /LOADER */
 #header {
   background: url("../img/city.jpg") no-repeat center center;
   width: 100%;
@@ -31,23 +68,22 @@ body, .container, .jumbotron {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  border-bottom: 2px solid #0366d6;
-  background-attachment: fixed; }
+  border-bottom: 2px solid #0366d6; }
 
 #meetTheCrew {
   height: 100%; }
 
 #recentUploads {
   background: url("../img/videoeditorCoverBlur.jpg") no-repeat center center;
-  background-size: 100% 1200px; }
+  background-attachment: fixed; }
 
 #originalSeries {
   background: url("../img/virtualdjCoverBlur.jpg") no-repeat center center;
-  background-size: 100% 1600px; }
+  background-attachment: fixed; }
 
 #getConnect {
   background: url("../img/photoshopCoverBlur.jpg") no-repeat center center;
-  background-size: 100% 600px; }
+  background-attachment: fixed; }
 
 #listOfRecentVideos {
   background: white; }
@@ -572,4 +608,4 @@ a {
   width: 250px;
   box-shadow: 0 8px 6px -6px #000; }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=oldIndex.css.map */
