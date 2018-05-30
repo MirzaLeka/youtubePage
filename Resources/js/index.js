@@ -118,7 +118,7 @@ let popularImg = ["roronoaPopular.jpg", "suicidePopular.jpg", "igiPopular.jpg",
    var $item = $('.carousel .item'); 
 //var $wHeight = $(window).height(); == screen height
 $item.eq(0).addClass('active');
-$item.height("50vh"); 
+// $item.height("50vh"); 
 $item.addClass('full-screen');
 
 $('.carousel img').each(function() {

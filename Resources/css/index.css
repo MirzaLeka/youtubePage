@@ -23,14 +23,19 @@ body, .container, .jumbotron {
    -ms-filter: blur(12px); 
    filter: blur(12px); */ }
 
-#recentUploads, #originalSeries, #getConnect {
+.imgWrapper {
+  width: 100%;
+  background-color: #310594; }
+
+.backgroundImgDiv {
   width: 100%;
   /*  padding: 20px 10px 60px 10px; */
   overflow: hidden;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  height: 100%;
   border-bottom: 2px solid #0366d6;
   background-attachment: fixed; }
 
@@ -39,15 +44,21 @@ body, .container, .jumbotron {
 
 #recentUploads {
   background: url("../img/videoeditorCoverBlur.jpg") no-repeat center center;
-  background-size: 100% 1200px; }
+  height: 100%;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
 
 #originalSeries {
   background: url("../img/virtualdjCoverBlur.jpg") no-repeat center center;
-  background-size: 100% 1600px; }
+  height: 100%;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
 
 #getConnect {
   background: url("../img/photoshopCoverBlur.jpg") no-repeat center center;
-  background-size: 100% 600px; }
+  height: 100%;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
 
 #listOfRecentVideos {
   background: white; }
@@ -60,6 +71,13 @@ body, .container, .jumbotron {
 .idea {
   text-align: center;
   margin-top: 10px; }
+
+#openBlog {
+  color: #FFA500 !important;
+  margin-right: 20px !important;
+  text-transform: capitalize !important; }
+  #openBlog:hover {
+    color: #ffd280 !important; }
 
 h1 {
   text-align: center;
@@ -101,6 +119,9 @@ h1 {
 .pause {
   width: 100%;
   background: white; }
+
+.item {
+  height: 50vh; }
 
 .profileDiv {
   width: 300px;
@@ -453,15 +474,11 @@ a {
   background: url("../img/insurgencyNext.jpg");
   height: 70vh;
   width: 100%;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  opacity: 0.85;
   transition: all 1s;
   box-shadow: 0 8px 6px -6px #FFF; }
   #upcomingVideo:hover {
-    -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%); }
+    opacity: 1; }
 
 #upcomingDetails {
   height: 100%;
@@ -479,6 +496,15 @@ a {
   font-size: 24px;
   width: 50%; }
 
+@media screen and (min-height: 1440px) {
+  #upcomingVideo {
+    height: 800px; }
+
+  #mainTitle {
+    font-size: 110px; }
+
+  .item {
+    height: 450px; } }
 @media (max-width: 1200px) {
   #upcomingInfo {
     font-size: 20px;

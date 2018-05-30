@@ -110,6 +110,15 @@ width: 100%;
   text-align: center;
 }
 
+#goHome{
+  color: #FFA500 !important;
+  margin-right: 20px !important;
+  text-transform: capitalize !important;
+
+  &:hover{
+    color: lighten(#FFA500, 25%) !important;
+  }
+}
 
 .footer{
     width: 100%;

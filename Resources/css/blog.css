@@ -88,6 +88,13 @@ a {
   flex-direction: column;
   text-align: center; }
 
+#goHome {
+  color: #FFA500 !important;
+  margin-right: 20px !important;
+  text-transform: capitalize !important; }
+  #goHome:hover {
+    color: #ffd280 !important; }
+
 .footer {
   width: 100%;
   text-align: center;
