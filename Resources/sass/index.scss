@@ -46,8 +46,6 @@ box-shadow: $top $down $left $right $color;
 
 .imgWrapper{
   width: 100%;
-  background-color: #310594;
-
 }
 
 
@@ -694,10 +692,12 @@ height: 210px;
 
 } 
 
+/*
 .upcomingAnchor{
   text-decoration: none;
   text-emphasis: none;
   color: #FFF;
+  text-align: center;
 
   &:hover{
     text-emphasis: none;
@@ -705,6 +705,7 @@ height: 210px;
     color: #FFF;
   }
 }
+*/
 
 
 /* FULL SCREEN OVERLAY */

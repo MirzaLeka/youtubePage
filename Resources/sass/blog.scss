@@ -111,12 +111,12 @@ width: 100%;
 }
 
 #goHome{
-  color: #FFA500 !important;
+  color: lighten(#007BFF, 5%) !important;
   margin-right: 20px !important;
   text-transform: capitalize !important;
 
   &:hover{
-    color: lighten(#FFA500, 25%) !important;
+    color: lighten(#007BFF, 25%) !important;
   }
 }
 

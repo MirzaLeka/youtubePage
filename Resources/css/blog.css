@@ -89,11 +89,11 @@ a {
   text-align: center; }
 
 #goHome {
-  color: #FFA500 !important;
+  color: #1a88ff !important;
   margin-right: 20px !important;
   text-transform: capitalize !important; }
   #goHome:hover {
-    color: #ffd280 !important; }
+    color: #80bdff !important; }
 
 .footer {
   width: 100%;

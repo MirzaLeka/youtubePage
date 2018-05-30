@@ -24,8 +24,7 @@ body, .container, .jumbotron {
    filter: blur(12px); */ }
 
 .imgWrapper {
-  width: 100%;
-  background-color: #310594; }
+  width: 100%; }
 
 .backgroundImgDiv {
   width: 100%;
@@ -523,15 +522,20 @@ a {
 
   #upcomingVideo {
     height: 50vh; } }
-.upcomingAnchor {
+/*
+.upcomingAnchor{
   text-decoration: none;
   text-emphasis: none;
-  color: #FFF; }
-  .upcomingAnchor:hover {
+  color: #FFF;
+  text-align: center;
+
+  &:hover{
     text-emphasis: none;
     text-decoration: none;
-    color: #FFF; }
-
+    color: #FFF;
+  }
+}
+*/
 /* FULL SCREEN OVERLAY */
 .screenOverlay {
   display: none;
