@@ -118,10 +118,14 @@ let c = 'https://www.youtube.com/watch?v=QcLC14HbvHY';
 let d = 'https://www.youtube.com/watch?v=ENyo9Km-HWg';
 let e = 'https://www.youtube.com/watch?v=9F1vZdshgVw';
 
+let story1 = "Comeback series tells is based our everyone's favorite world war 2 shooters. Series features number of games including Medal of Honor Allied Assault and the expansion packs, Call of Duty 1 and 2 with it's unique battles.";
+
 // Spider-Man
 
 let aa = 'https://www.youtube.com/watch?v=LruYPBvGQHc';
 let bb = 'https://www.youtube.com/watch?v=XQ_AH4IFCT4';
+
+let story2 = "Series follows the story of the amazing spiderman saga."
 
 // Family Bond
 
@@ -129,11 +133,15 @@ let aaa = 'https://www.youtube.com/watch?v=uCDSVtRXnT4';
 let bbb = 'https://www.youtube.com/watch?v=WuuM1kwxPO4';
 let ccc = 'https://www.youtube.com/watch?v=qC9DlHSX5yE';
 
+let story3 = "Starting with Ezio, all the way to Jacob, series features a number of protagonists of the AC brand."
+
 // the will of D
 
 let aaaa = 'https://www.youtube.com/watch?v=bQ7aaklrqKk';
 let bbbb = 'https://www.youtube.com/watch?v=j-JdcGMoOVE';
 let cccc = 'https://www.youtube.com/watch?v=oxrXfDuaTl4';
+
+let story4 = "Story about anime pirates."
 
 // Descriptions
 
