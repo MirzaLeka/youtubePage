@@ -36,7 +36,7 @@ let sidebarVideoTitles= [
 let overlayVideoDescription = [
 `   <br>
 Saga combines many gaming series together into a groundbreaking cops and criminals drama.
-Beside Rainbow Six and Battlefield, series also features Counter Strike, Swat 4, as well as SWAT 2003 and SWAT Firefight movies.<br><br>
+Beside Rainbow Six and Battlefield, series also features Counter Strike, Swat 4, as well as two SWAT movies.<br><br>
 Next entry in the series brings Payday, Grand Theft Auto and Call of Duty into the mix.<br><br>
 <b>Release date</b>: TBA`,
 ``,
@@ -95,14 +95,14 @@ function getIframeSrc(src) {
 
 
 let sideImages = [
-    "../Resources/img/overlayImg/rainbowSeries/max2.jpg",
+    "../Resources/img/overlayImg/rainbowSeries/max4.jpg",
     "../Resources/img/overlayImg/rainbowSeries/max3.jpg"
 ];
 
 let getSideImages = '';
 
 for (let i=0; i < sideImages.length; i++) {
-getSideImages += `<img class="previewImg blackBackground" src=${sideImages[i]} />`;
+getSideImages += `<img class="overlayPreviewImg blackBackground" src=${sideImages[i]} />`;
 }
 
 $("#sideImages").html(getSideImages);
@@ -118,7 +118,7 @@ let c = 'https://www.youtube.com/watch?v=QcLC14HbvHY';
 let d = 'https://www.youtube.com/watch?v=ENyo9Km-HWg';
 let e = 'https://www.youtube.com/watch?v=9F1vZdshgVw';
 
-let story1 = "Comeback series tells is based our everyone's favorite world war 2 shooters. Series features number of games including Medal of Honor Allied Assault and the expansion packs, Call of Duty 1 and 2 with it's unique battles.";
+let story1 = "Comeback series tells is based our everyone's favorite world war 2 shooters. Series features number of games including Medal of Honor Allied Assault and the expansion packs, Call of Duty 1 and 2 with their most iconic missions played in a way you'd never knew existed. Series of funny moments and explosions.";
 
 // Spider-Man
 
@@ -141,9 +141,11 @@ let aaaa = 'https://www.youtube.com/watch?v=bQ7aaklrqKk';
 let bbbb = 'https://www.youtube.com/watch?v=j-JdcGMoOVE';
 let cccc = 'https://www.youtube.com/watch?v=oxrXfDuaTl4';
 
-let story4 = "Story about anime pirates."
+let story4 = "Through high action set pieces and stunning visual effects, this saga focuses on ."
+let st0ry = "The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world's ultimate treasure known as 'One Piece' in order to become the next Pirate King.";
 
 // Descriptions
+
 
 
 // 
