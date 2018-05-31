@@ -6,13 +6,10 @@ body {
   background: #111; }
 
 .sidenav {
-  height: 849px;
+  height: 900px;
   border-right: 2px solid #666;
   overflow-x: hidden;
   overflow-y: auto; }
-
-h5 {
-  color: #FFF; }
 
 .contentHeader {
   text-align: center;
@@ -21,7 +18,7 @@ h5 {
 .contentTitle {
   border-bottom: 2px solid red;
   text-align: center;
-  width: 500px;
+  width: 50%;
   margin: auto;
   padding-bottom: 10px;
   color: #FFF; }
@@ -48,22 +45,31 @@ iframe {
   display: block; }
 
 .listLi {
+  background-size: cover;
   list-style-type: none;
   height: 125px;
   padding-top: 20px;
   width: 100%;
+  opacity: 0.75;
   cursor: pointer;
   box-shadow: 0 8px 6px -6px #666; }
-
-.listLi:hover .innerLi {
-  color: #0366d6; }
+  .listLi:hover {
+    opacity: 1; }
 
 .listHeading {
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  display: none;
+  color: #FFF; }
+
+.listLi:hover .listHeading {
+  display: block; }
 
 .blackBackground {
   background: #000;
   box-shadow: 0 8px 6px -6px #333; }
+
+h5 {
+  color: #FFF; }
 
 /*# sourceMappingURL=overlay.css.map */

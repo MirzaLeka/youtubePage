@@ -19,25 +19,21 @@ body{
 }
 
 .sidenav{
-    height: 849px;
+    height: 900px;
     border-right: 2px solid #666;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-h5{
-    color: #FFF;
-}
-
 .contentHeader{
-    text-align: center;
+   text-align: center;
    width: 100%;
   }
   
   .contentTitle {
     border-bottom: 2px solid red;
     text-align: center;
-    width: 500px;
+    width: 50%;
     margin: auto;
     padding-bottom: 10px;
     color: #FFF;
@@ -74,25 +70,39 @@ iframe{
 }
 
 .listLi{
+ //   background: url('../img/overlayImg/rainbowSeries/max.jpg');
+    background-size: cover;
     list-style-type: none;
     height: 125px;
     padding-top: 20px;
     width: 100%;  
+    opacity: 0.75;
     cursor: pointer;
     @include shadowBottom(0, 8px, 6px, -6px, #666);
+
+    &:hover{
+        opacity: 1;
+    }
   }
   
-  .listLi:hover .innerLi{
-     color: $mainBlue;
-  }
-
   .listHeading{
       text-align: center;
       width: 100%;
+      display: none;
+      color: #FFF;
   }
+
+
+  .listLi:hover .listHeading{
+    display: block;
+  }
+
 
   .blackBackground{
       background: #000;
       @include shadowBottom(0, 8px, 6px, -6px, #333);
   }
   
+  h5{
+    color: #FFF;
+  }

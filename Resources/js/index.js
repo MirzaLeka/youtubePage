@@ -65,7 +65,7 @@ let uploadsSrc = ["https://www.youtube.com/embed/MT11emrOkm8",
 "https://www.youtube.com/embed/JE9u2dCxbzI",
 "https://www.youtube.com/embed/hms61SpaSVA"];
 
-$("iframe").attr("src",uploadsSrc[src]);
+$(".pageIframe").attr("src",uploadsSrc[src]);
 
 
 }
