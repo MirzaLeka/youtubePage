@@ -1,3 +1,48 @@
+
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
+/* Variables */
+
+$mainBlue :   #0366d6;
+$profileBlue : #008CBA;
+
+/* Mixins */
+
+@mixin shadowBottom($top, $down, $left, $right, $color){
+box-shadow: $top $down $left $right $color;
+}
+
+
+body{
+    overflow-x: none;
+    background: #111;
+}
+
+.sidenav{
+    height: 849px;
+    border-right: 2px solid #666;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h5{
+    color: #FFF;
+}
+
+.contentHeader{
+    text-align: center;
+   width: 100%;
+  }
+  
+  .contentTitle {
+    border-bottom: 2px solid red;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding-bottom: 10px;
+    color: #FFF;
+  }
+
 .videoContainer{
     background: beige;
     height: 100%;
@@ -27,3 +72,27 @@ iframe{
     margin: 0 auto;
     display: block;
 }
+
+.listLi{
+    list-style-type: none;
+    height: 125px;
+    padding-top: 20px;
+    width: 100%;  
+    cursor: pointer;
+    @include shadowBottom(0, 8px, 6px, -6px, #666);
+  }
+  
+  .listLi:hover .innerLi{
+     color: $mainBlue;
+  }
+
+  .listHeading{
+      text-align: center;
+      width: 100%;
+  }
+
+  .blackBackground{
+      background: #000;
+      @include shadowBottom(0, 8px, 6px, -6px, #333);
+  }
+  

@@ -100,7 +100,7 @@
                   Insurgency is multiplayer only first person shooter series developed by New World Interactive. 
                   Series is set in modern time and features high emphasis on teamplay, immersive firefights and emphasis on realism.<br> One bullet and you're down.
                   <br> <br>
-                  All of those things inspired us to innovate and start creating something we haven't done yet.                    
+                  All of those things inspired us to innovate and start creating something we haven't done before.                    
                   </p>
 
              </div>
@@ -248,10 +248,17 @@ $("body").css({
         if (currentTime => 25.4) {
 
       $("#blogHeader").slideDown(1000);  
-     $("body").css({
-    background: "#000",
-    overflowY : "auto"
-  });      
+      
+     $("body").delay(1000)
+     .queue(function (next) { 
+      $(this).css({
+      background: "#000",
+      overflowY : "auto"
+      }); 
+    next(); 
+  });
+     
+       
   $(".fullPageContent").delay(750).fadeIn(1000);  
 
 
