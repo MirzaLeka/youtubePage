@@ -30,8 +30,13 @@
       <div class="loader">
       
       </div>
-      
+
       </div>
+
+
+      <video id="myVideo" width="100%" height="100%" autoplay>
+          <source src="../Resources/video/insurgency.mp4" type="video/mp4">
+        </video>
 
   <!--/LOADER-->   
 
@@ -80,13 +85,6 @@
         <div class="row">
           <div class="col-xs-12">
         
-<!--
-            <video width="100%" height="100%" autoplay>
-              <source src="../Resources/video/mat.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video> -->
-
-
              <div class="post">
 
                 <div class="postHeader">
@@ -100,9 +98,9 @@
                   Last time we made a war video was a <b>Tribute To D-day</b>, a year ago and we figured that the best way to go back to that genre is with Insurgency.
                   <br> <br>
                   Insurgency is multiplayer only first person shooter series developed by New World Interactive. 
-                  Series is set in modern time and features high emphasis on teamplay, immersive firefights, emphasis on realism.<br> One bullet and you're down.
+                  Series is set in modern time and features high emphasis on teamplay, immersive firefights and emphasis on realism.<br> One bullet and you're down.
                   <br> <br>
-                  All of those elements inspired us to innovate and start creating something we haven't done yet.                    
+                  All of those things inspired us to innovate and start creating something we haven't done yet.                    
                   </p>
 
              </div>
@@ -129,11 +127,11 @@
 
                   <p class="postContent">
                     <br>
-                     Beside puting scenes and music together we always tend to pay attention to the narrative.
+                     Beside putting scenes and music together we always tend to pay attention to the narrative.
                      Since it's a multiplayer game, we tried to write our own story we experienced while playing this game for many hours.
                      <br><br>
-                     With Insurgency we want to tell a story of soldiers that fight in this war.
-                     And there is a scene where one of the soldiers calls his wife and tells her that everything is going be ok.
+                     With Insurgency we want to tell a story of soldiers that fight in this fictional war.
+                     And there is a scene where one of the soldiers calls his wife on a phone and tells her that everything is going be ok, even though he doesn't know what's gonna happen.
                      <br>
                      It has that personal touch we want to bring forward.
                   </p>
@@ -148,7 +146,7 @@
 
       <div class="betweenPosts fullPageContent">
 
-        <h1 class="betweenTitle">TEAM</h1>
+        <h1 class="betweenTitle">COMBAT</h1>
 
       </div>
 
@@ -164,9 +162,9 @@
           <p class="postContent">
               <br>
                 The heart of the Insurgency is teamplay. 
-                We didn't want to make a video just about player shooting dozens of enemies. We tried to capture as much team actions as possible.
+                We don't want to make a video about player shooting dozens of enemies. What we are trying to do is capture as much team actions as possible.
                 <br> <br> 
-                Our final product we'll be all about that. We want to make you feel as a part of a group, rather than an individual.
+                Our final product we'll be all about that. This is a video about group of soldiers who fight through chaos together, rather than an individual who saves the day.
             </p>
 
       </div>
@@ -193,9 +191,9 @@
 
                     <p class="postContent">
                       <br>
-                        Insurgency is a big project. We have our own story we want to tell, we have 100 GBs of recorder gameplay videos.
+                        Insurgency is a big project for us. We have a story we want to tell and we also have 100 GBs of recorder gameplay videos.
                         <br> 
-                        We are putting all of those elements together in to something we hope people will enjoy. So stay tuned.
+                        We are combining all previously mentioned elements together into something we hope you will enjoy watching. Stay tuned.
                         <br><br>
                         <b>Release date:</b> Summer 2018.
     
@@ -218,6 +216,94 @@
         </div>
 
 </body>
+
+<script>
+
+
+$(document).ready(function(){
+
+
+$("body").css({
+  background: "#111",
+  overflow : "hidden"
+});
+
+  $(".mainDiv").fadeOut(2000, function() {
+
+});
+
+
+   $("#myVideo").on(
+    "timeupdate", 
+    function(event){
+      onTrackedVideoFrame(this.currentTime, this.duration);
+    });
+
+    function onTrackedVideoFrame(currentTime, duration){
+
+      if (currentTime >= 25) {
+
+        $("#myVideo").fadeOut(400);
+
+        if (currentTime => 25.4) {
+
+      $("#blogHeader").slideDown(1000);  
+     $("body").css({
+    background: "#000",
+    overflowY : "auto"
+  });      
+  $(".fullPageContent").delay(750).fadeIn(1000);  
+
+
+        }
+
+
+    }
+
+
+
+    
+  
+
+    }
+
+    
+/* Loader  */
+
+$(".fullPageContent").css({
+  display: "none"
+})
+
+
+
+var video = $("#myVideo");
+
+
+
+/* / Loader */
+
+});
+
+/* Video */
+
+
+/*
+  var myVideoPlayer = document.getElementById('myVideo');
+myVideoPlayer.addEventListener('loadedmetadata', function() {
+    console.log("FFF; " + myVideoPlayer.duration);
+});
+
+*/
+
+
+
+
+ 
+
+
+
+</script>
+
 <script src="../Resources/js/blog.js"></script>
 <script src="../Resources/js/navmini.js"></script>
 <!-- <script src="../Resources/js/navbar.js"></script> -->
