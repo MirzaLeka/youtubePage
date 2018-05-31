@@ -19,18 +19,18 @@ body{
 }
 
 .sidenav{
-    height: 900px;
+    height: 875px;
     border-right: 2px solid #666;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-.contentHeader{
+.overlayHeader{
    text-align: center;
    width: 100%;
   }
   
-  .contentTitle {
+  .overlayTitle {
     border-bottom: 2px solid red;
     text-align: center;
     width: 50%;
@@ -63,15 +63,13 @@ img:first-child{
 
 }
 
-iframe{
+.overlayIframe{
     text-align: center;
     margin: 0 auto;
     display: block;
 }
 
-.listLi{
- //   background: url('../img/overlayImg/rainbowSeries/max.jpg');
-    background-size: cover;
+.overlayListLi{
     list-style-type: none;
     height: 125px;
     padding-top: 20px;
@@ -85,7 +83,8 @@ iframe{
     }
   }
   
-  .listHeading{
+  .overlayListHeading{
+      padding-top: 15px;
       text-align: center;
       width: 100%;
       display: none;
@@ -93,7 +92,7 @@ iframe{
   }
 
 
-  .listLi:hover .listHeading{
+  .overlayListLi:hover .overlayListHeading{
     display: block;
   }
 
@@ -103,6 +102,6 @@ iframe{
       @include shadowBottom(0, 8px, 6px, -6px, #333);
   }
   
-  h5{
-    color: #FFF;
+  .overlayVideoDescription{
+      color: #FFF;
   }
