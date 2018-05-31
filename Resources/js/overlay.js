@@ -108,3 +108,36 @@ getSideImages += `<img class="previewImg blackBackground" src=${sideImages[i]} /
 $("#sideImages").html(getSideImages);
 
 
+// Video URLS
+
+// MOH
+
+let a = 'https://www.youtube.com/watch?v=uNn0IAS8HEk';
+let b = 'https://www.youtube.com/watch?v=QsoXx2s2IBc';
+let c = 'https://www.youtube.com/watch?v=QcLC14HbvHY';
+let d = 'https://www.youtube.com/watch?v=ENyo9Km-HWg';
+let e = 'https://www.youtube.com/watch?v=9F1vZdshgVw';
+
+// Spider-Man
+
+let aa = 'https://www.youtube.com/watch?v=LruYPBvGQHc';
+let bb = 'https://www.youtube.com/watch?v=XQ_AH4IFCT4';
+
+// Family Bond
+
+let aaa = 'https://www.youtube.com/watch?v=uCDSVtRXnT4';
+let bbb = 'https://www.youtube.com/watch?v=WuuM1kwxPO4';
+let ccc = 'https://www.youtube.com/watch?v=qC9DlHSX5yE';
+
+// the will of D
+
+let aaaa = 'https://www.youtube.com/watch?v=bQ7aaklrqKk';
+let bbbb = 'https://www.youtube.com/watch?v=j-JdcGMoOVE';
+let cccc = 'https://www.youtube.com/watch?v=oxrXfDuaTl4';
+
+// Descriptions
+
+
+// 
+
+
