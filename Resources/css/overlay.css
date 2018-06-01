@@ -2,7 +2,7 @@
 /* Variables */
 /* Mixins */
 body {
-  overflow-x: none;
+  overflow-x: hidden;
   background: #111; }
 
 html, body {

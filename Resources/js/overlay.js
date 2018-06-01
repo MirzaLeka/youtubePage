@@ -48,9 +48,9 @@ Next entry in the series brings Payday, Grand Theft Auto and Call of Duty into t
 $(".overlayVideoDescription").html(overlayVideoDescription[0]);
 
 let backgroundList = [
-"../Resources/img/overlayImg/rainbowSeries/max.jpg",
-"../Resources/img/overlayImg/rainbowSeries/max1.jpg",
-"../Resources/img/overlayImg/rainbowSeries/max2.jpg"
+"../Resources/img/overlayImg/max.jpg",
+"../Resources/img/overlayImg/max1.jpg",
+"../Resources/img/overlayImg/max2.jpg"
 ];
 
 let videoURLs = [
@@ -95,8 +95,8 @@ function getIframeSrc(src) {
 
 
 let sideImages = [
-    "../Resources/img/overlayImg/rainbowSeries/max4.jpg",
-    "../Resources/img/overlayImg/rainbowSeries/max3.jpg"
+    "../Resources/img/overlayImg/max4.jpg",
+    "../Resources/img/overlayImg/max3.jpg"
 ];
 
 let getSideImages = '';
@@ -118,14 +118,17 @@ let c = 'https://www.youtube.com/watch?v=QcLC14HbvHY';
 let d = 'https://www.youtube.com/watch?v=ENyo9Km-HWg';
 let e = 'https://www.youtube.com/watch?v=9F1vZdshgVw';
 
-let story1 = "Comeback series tells is based our everyone's favorite world war 2 shooters. Series features number of games including Medal of Honor Allied Assault and the expansion packs, Call of Duty 1 and 2 with their most iconic missions played in a way you'd never knew existed. Series of funny moments and explosions.";
+let story1 = `Comeback series saga is based around everyone's favorite World War 2 shooters. 
+Series features number of games including Medal of Honor Allied Assault and the expansion packs,
+Call of Duty 1 and 2 with their most iconic missions played in a way you'd never knew existed. Series also features easter eggs and funny moments.`;
 
 // Spider-Man
 
 let aa = 'https://www.youtube.com/watch?v=LruYPBvGQHc';
 let bb = 'https://www.youtube.com/watch?v=XQ_AH4IFCT4';
 
-let story2 = "Series follows the story of the amazing spiderman saga."
+let story2 = "Inspired by no-other than the Marvel's Amazing Spierman series, the saga follows that same storyline told in a different way.";
+
 
 // Family Bond
 
@@ -133,7 +136,8 @@ let aaa = 'https://www.youtube.com/watch?v=uCDSVtRXnT4';
 let bbb = 'https://www.youtube.com/watch?v=WuuM1kwxPO4';
 let ccc = 'https://www.youtube.com/watch?v=qC9DlHSX5yE';
 
-let story3 = "Starting with Ezio, all the way to Jacob, series features a number of protagonists of the AC brand."
+let story3 = `Starting with Kenway family, divnig back into Ezio's saga and Altair and finally finishing with Arno and Jacob
+,saga gives each major Assassin's Creed protagonist a moment to shine with a sound of Eminem and Imagine Dragons playing in the back.`;
 
 // the will of D
 
@@ -141,13 +145,7 @@ let aaaa = 'https://www.youtube.com/watch?v=bQ7aaklrqKk';
 let bbbb = 'https://www.youtube.com/watch?v=j-JdcGMoOVE';
 let cccc = 'https://www.youtube.com/watch?v=oxrXfDuaTl4';
 
-let story4 = "Through high action set pieces and stunning visual effects, this saga focuses on ."
-let st0ry = "The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world's ultimate treasure known as 'One Piece' in order to become the next Pirate King.";
-
-// Descriptions
-
-
-
-// 
-
+let story4 = `Through high action set pieces and stunning visual effects this saga focuses on famous anime series One Piece.
+This three part series follows the advantures of Monkey D. Luffy and his crew on a quest to find treasure known as 'One Piece'
+in order to become the next pirate king.`;
 
