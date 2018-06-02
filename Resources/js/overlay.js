@@ -1,16 +1,147 @@
 $(document).ready(function() {
 
-    $(".overlayIframe").attr("src",videoURLs[0]);
+//    $(".overlayIframe").attr("src",videoURLs[0]);
     
-    videoList();
+  //  videoList();
 
+    /*
     var height = $('body').height()
     console.log("body: " + height);
+    */
+
+    getOverlayContent(0);
 
 });
 
+// Array of content
 
-var overlayTitle = [
+let overlayArray = [
+    {
+       title:  "Rainbow Six Siege | Battlefield Hardline Saga",
+       description: "<br> Saga combines many gaming series together into a groundbreaking cops and criminals drama. Beside Rainbow Six and Battlefield, series also features Counter Strike, Swat 4, as well as two SWAT movies.<br><br> Next entry in the series brings Payday, Grand Theft Auto and Call of Duty into the mix.<br><br> <b>Release date</b>: TBA",
+       videoURLs: [
+        "https://www.youtube.com/embed/Qu4H06Jsn6w",
+        "https://www.youtube.com/embed/eAdz1faa3d4",
+        "https://www.youtube.com/embed/slbnHR0gngg"
+       ],
+       videoImages : [
+        "../Resources/img/overlayImg/r61.jpg",
+        "../Resources/img/overlayImg/r62.jpg",
+        "../Resources/img/overlayImg/r63.jpg"
+       ],
+       sideImages : [
+        "../Resources/img/rainbowSeries.jpg",
+        "../Resources/img/overlayImg/r6Side.jpg"
+       ]
+    }
+    
+    
+    ];
+
+////////////////////////
+
+
+/* Adding props to the DOM */
+
+let getOverlayContent = j => {
+
+
+// Series title
+
+$(".overlayTitle").html(overlayArray[j].title);
+
+// Series Description
+
+$(".overlayVideoDescription").html(overlayArray[j].description);
+
+// List of videos
+
+let fillList = ''; 
+
+let part2 = 'https://www.youtube.com/embed/eAdz1faa3d4';
+
+console.log(`part2: ${part2}`);
+
+console.log("overlay urls: " + overlayArray[j].videoURLs);
+
+var part3 = overlayArray[j].videoURLs;
+
+console.log("PART 3: " + part3);
+    
+for (let i = 0; i < overlayArray[j].videoImages.length; i++) {
+
+    fillList += `<li style="background: url(${overlayArray[j].videoImages[i]}) no-repeat center center; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;  "
+    class="overlayListLi"
+    onclick="getOverlayIframeSrc(${j}, ${i})">
+    <h4 class="overlayListHeading">Episode ${i+1}</h4>
+    
+    </li> <br>`;
+}
+
+$(".videosUl").html(fillList);
+
+// Side Images
+
+let getSideImages = '';
+
+for (let i=0; i < overlayArray[j].sideImages.length; i++) {
+getSideImages += `<img class="overlayPreviewImg blackBackground" src=${overlayArray[j].sideImages[i]} />`;
+}
+
+$("#sideImages").html(getSideImages);
+
+// Iframe default video -- first in array
+
+$(".overlayIframe").attr("src",overlayArray[j].videoURLs[0]);
+
+
+}
+
+/////////////////////////////
+
+
+// Add new src to iframe
+
+function getOverlayIframeSrc(obj, counter) {
+
+    /*
+    console.log("obj: " + obj);
+    console.log("counter: " + counter);
+    */
+
+  $(".overlayIframe").attr("src", overlayArray[obj].videoURLs[counter]);
+    
+    }
+
+
+
+
+
+
+
+    /* WORKING SAMPLE 
+    
+       fillList += `<li style="background: url(${overlayArray[j].videoImages[i]}) no-repeat center center; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;  "
+    class="overlayListLi"
+    onclick="getOverlayIframeSrc(${i})">
+    <h4 class="overlayListHeading">Episode ${i+1}</h4>
+    
+    </li> <br>`;
+    
+    
+    */
+
+
+/*
+let overlayTitle = [
 "Rainbow Six Siege | Battlefield Hardline Saga",    
 "Assassin's Creed: Family Bond Saga",
 "Comeback Series Saga",
@@ -52,7 +183,7 @@ let videoURLs = [
     "https://www.youtube.com/embed/Qu4H06Jsn6w",
     "https://www.youtube.com/embed/eAdz1faa3d4",
     "https://www.youtube.com/embed/slbnHR0gngg"
-];
+]; 
 
 
 let videoList = () => {
@@ -73,8 +204,6 @@ for (let i = 0; i < backgroundList.length; i++) {
     </li> <br>`;
 
 }
-
-
 
 $(".videosUl").html(fillList);
 
@@ -102,6 +231,7 @@ getSideImages += `<img class="overlayPreviewImg blackBackground" src=${sideImage
 
 $("#sideImages").html(getSideImages);
 
+*/
 
 // Video URLS
 
