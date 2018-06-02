@@ -27,11 +27,6 @@ $(".overlayTitle").html(overlayTitle[0]);
 // use $ .html to cycle between objects ---> array[0].pic1, array[0].pic2
 
 1
-let sidebarVideoTitles= [
-"Episode",
-"Episode",
-"Episode"
-];
 
 let overlayVideoDescription = [
 `   <br>
@@ -48,9 +43,9 @@ Next entry in the series brings Payday, Grand Theft Auto and Call of Duty into t
 $(".overlayVideoDescription").html(overlayVideoDescription[0]);
 
 let backgroundList = [
-"../Resources/img/overlayImg/max.jpg",
-"../Resources/img/overlayImg/max1.jpg",
-"../Resources/img/overlayImg/max2.jpg"
+"../Resources/img/overlayImg/r61.jpg",
+"../Resources/img/overlayImg/r62.jpg",
+"../Resources/img/overlayImg/r63.jpg"
 ];
 
 let videoURLs = [
@@ -64,7 +59,7 @@ let videoList = () => {
 
   let fillList = ''; 
     
-for (let i = 0; i < sidebarVideoTitles.length; i++) {
+for (let i = 0; i < backgroundList.length; i++) {
 
     fillList += `<li style="background: url(${backgroundList[i]}) no-repeat center center; 
     background-size: cover;
@@ -73,7 +68,7 @@ for (let i = 0; i < sidebarVideoTitles.length; i++) {
     -o-background-size: cover;  "
     class="overlayListLi"
     onclick="getIframeSrc(${i})">
-    <h4 class="overlayListHeading">${sidebarVideoTitles[i]} ${i+1}</h4>
+    <h4 class="overlayListHeading">Episode ${i+1}</h4>
     
     </li> <br>`;
 
@@ -81,7 +76,7 @@ for (let i = 0; i < sidebarVideoTitles.length; i++) {
 
 
 
-$("#videosUl").html(fillList);
+$(".videosUl").html(fillList);
 
 }
 
@@ -95,8 +90,8 @@ function getIframeSrc(src) {
 
 
 let sideImages = [
-    "../Resources/img/overlayImg/max4.jpg",
-    "../Resources/img/overlayImg/max3.jpg"
+    "../Resources/img/rainbowSeries.jpg",
+    "../Resources/img/overlayImg/r6Side.jpg"
 ];
 
 let getSideImages = '';

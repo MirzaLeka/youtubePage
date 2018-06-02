@@ -64,6 +64,9 @@ html, body {
   display: none;
   color: #FFF; }
 
+#overlayBottomList {
+  display: none; }
+
 .overlayListLi:hover .overlayListHeading {
   display: block; }
 
@@ -102,7 +105,11 @@ html, body {
 
   #textCenterDiv {
     padding: 20px 0;
-    margin-top: 40px; } }
+    margin-top: 40px; }
+
+  #overlayBottomList {
+    margin-top: 40px;
+    display: block; } }
 @media only screen and (max-width: 570px) {
   .overlayIframe {
     height: 240px;

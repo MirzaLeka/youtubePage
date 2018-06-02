@@ -18,7 +18,9 @@ body{
     background: #111;
 }
 
-html,body { height:100%; }
+html,body {
+     height:100%; 
+    }
 
 .sidenav{
     height: 100%;
@@ -88,6 +90,9 @@ html,body { height:100%; }
       color: #FFF;
   }
 
+  #overlayBottomList{
+      display: none;
+  }
 
   .overlayListLi:hover .overlayListHeading{
     display: block;
@@ -145,6 +150,12 @@ html,body { height:100%; }
         padding: 20px 0;
         margin-top: 40px;
       }
+
+      #overlayBottomList{
+        margin-top: 40px;
+        display: block;
+    }
+  
     
  
  }
