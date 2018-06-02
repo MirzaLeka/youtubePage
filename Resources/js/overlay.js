@@ -9,7 +9,7 @@ $(document).ready(function() {
     console.log("body: " + height);
     */
 
-    getOverlayContent(0);
+    getOverlayContent(1);
 
 });
 
@@ -33,7 +33,88 @@ let overlayArray = [
         "../Resources/img/rainbowSeries.jpg",
         "../Resources/img/overlayImg/r6Side.jpg"
        ]
+    },
+
+    {
+        title:  "Assassin's Creed: Family Bond Saga",
+        description: "<br> Starting with Kenway family, divnig back into Ezio's saga and Altair and finally finishing with Arno and Jacob, saga gives each major Assassin's Creed protagonist a moment to shine with a sound of Eminem and Imagine Dragons playing in the back.",
+        videoURLs: [
+            'https://www.youtube.com/embed/CDSVtRXnT4',
+            'https://www.youtube.com/embed/WuuM1kwxPO4',
+            'https://www.youtube.com/embed/qC9DlHSX5yE'
+            
+        ],
+        videoImages : [
+         "../Resources/img/overlayImg/bond1.jpg",
+         "../Resources/img/overlayImg/bond2.jpg",
+         "../Resources/img/overlayImg/bond3.jpg"
+        ],
+        sideImages : [
+         "../Resources/img/assassinsSeries.jpg",
+         "../Resources/img/overlayImg/bondSide.jpg"
+        ]
+    },
+
+    {
+        title:  "Comeback Series Saga",
+        description: "<br> Comeback series saga is based around everyone's favorite World War 2 shooters. <br>Series features number of games including Medal of Honor Allied Assault and the expansion packs, Call of Duty 1 and 2, with their most iconic missions.<br><br> Series also features easter eggs and funny moments.",
+        videoURLs: [
+            'https://www.youtube.com/embed/uNn0IAS8HEk',
+            'https://www.youtube.com/embed/QsoXx2s2IBc',
+            'https://www.youtube.com/embed/QcLC14HbvHY',
+            'https://www.youtube.com/embed/ENyo9Km-HWg',
+            'https://www.youtube.com/embed/9F1vZdshgVw'
+        ],
+        videoImages : [
+         "../Resources/img/overlayImg/moh1.jpg",
+         "../Resources/img/overlayImg/moh2.jpg",
+         "../Resources/img/overlayImg/moh3.jpg",
+         "../Resources/img/overlayImg/moh4.jpg",
+         "../Resources/img/overlayImg/moh5.jpg"
+        ],
+        sideImages : [
+         "../Resources/img/comebackSeries.jpg",
+         "../Resources/img/overlayImg/mohSide.jpg"
+        ]
+    },
+
+    {
+        title:  "One Piece: The Will of D Saga",
+        description: "<br> Through high action set pieces and stunning visual effects this saga focuses on famous anime series One Piece.<br><br>This three part series follows the advantures of Monkey D. Luffy and his crew on a quest to find treasure known as 'One Piece' in order to become the next pirate king.",
+        videoURLs: [
+            'https://www.youtube.com/embed/bQ7aaklrqKk',
+            'https://www.youtube.com/embed/j-JdcGMoOVE',
+            'https://www.youtube.com/embed/oxrXfDuaTl4'
+        ],
+        videoImages : [
+         "../Resources/img/overlayImg/will1.jpg",
+         "../Resources/img/overlayImg/will2.jpg",
+         "../Resources/img/overlayImg/will3.jpg"
+        ],
+        sideImages : [
+         "../Resources/img/onePieceSeries.jpg",
+         "../Resources/img/overlayImg/willSide.jpg"
+        ]
+    },
+
+    {
+        title:  "The Amazing Spiderman Saga",
+        description: "<br> Inspired by no-other than the Marvel's Amazing Spierman series, the saga follows that same storyline told in a way never seen before.",
+        videoURLs: [
+            'https://www.youtube.com/embed/LruYPBvGQHc',
+            'https://www.youtube.com/embed/XQ_AH4IFCT4'            
+        ],
+        videoImages : [
+         "../Resources/img/overlayImg/spider1.jpg",
+         "../Resources/img/overlayImg/spider2.jpg",
+        ],
+        sideImages : [
+         "../Resources/img/spidermanSeries.jpg",
+         "../Resources/img/overlayImg/spiderSide.jpg"
+        ]
     }
+
+
     
     
     ];
