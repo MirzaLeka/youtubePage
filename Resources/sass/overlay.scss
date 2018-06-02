@@ -193,8 +193,39 @@ html,body {
     }
         }
  
- 
+ /* Scrollbar colors */
 
+ .sidenav::-webkit-scrollbar {
+    width: 10px;
+   background: #222;
+}
+ 
+.sidenav::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.sidenav::-webkit-scrollbar-track-piece  { 
+  background: #222;
+}
+ 
+.sidenav::-webkit-scrollbar-thumb {
+  background: red;
+
+}
+
+.sidenav::-webkit-scrollbar-thumb:hover{
+	background: lighten (red, 25%);
+}
+
+.sidenav::-webkit-scrollbar-thumb:active{
+	background: darken (red, 25%);
+}
+
+
+.sidenav::-webkit-scrollbar-corner       { 
+background: #111;
+
+}
 
 
  
