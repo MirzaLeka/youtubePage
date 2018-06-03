@@ -1,8 +1,3 @@
-$(document).ready(function() {
-
-    getOverlayContent(2);
-
-});
 
 // Array of content
 

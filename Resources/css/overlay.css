@@ -5,14 +5,10 @@ body {
   overflow-x: hidden;
   background: #111; }
 
-html, body {
-  height: 100%; }
-
 .sidenav {
   height: 100%;
   border-right: 2px solid #666;
-  overflow-x: hidden;
-  overflow-y: auto; }
+  overflow: hidden; }
 
 .overlayHeader {
   text-align: center;
@@ -126,26 +122,26 @@ html, body {
     height: 120px;
     width: 200px; } }
 /* Scrollbar colors */
-.sidenav::-webkit-scrollbar {
+.screenOverlay::-webkit-scrollbar {
   width: 10px;
   background: #222; }
 
-.sidenav::-webkit-scrollbar-track {
+.screenOverlay::-webkit-scrollbar-track {
   background: #222; }
 
-.sidenav::-webkit-scrollbar-track-piece {
+.screenOverlay::-webkit-scrollbar-track-piece {
   background: #222; }
 
-.sidenav::-webkit-scrollbar-thumb {
+.screenOverlay::-webkit-scrollbar-thumb {
   background: red; }
 
-.sidenav::-webkit-scrollbar-thumb:hover {
+.screenOverlay::-webkit-scrollbar-thumb:hover {
   background: lighten red, 25%; }
 
-.sidenav::-webkit-scrollbar-thumb:active {
+.screenOverlay::-webkit-scrollbar-thumb:active {
   background: darken red, 25%; }
 
-.sidenav::-webkit-scrollbar-corner {
+.screenOverlay::-webkit-scrollbar-corner {
   background: #111; }
 
 /*# sourceMappingURL=overlay.css.map */

@@ -84,6 +84,7 @@ box-shadow: $top $down $left $right $color;
   filter: blur(12px); */
 }
 
+/* All divs with background image, except header are wrapped inside this .imgWrapper div -> to prevent white bar glitch */
 .imgWrapper{
   width: 100%;
 }
@@ -722,12 +723,15 @@ height: 210px;
 @media (max-width:480px) {
 
   #upcomingInfo{
-    font-size: 16px;
-    width: 90%;
+    display: none;
   }
 
   #upcomingVideo{
     height: 50vh;
+  }
+
+  .carouselCaptionInfo{
+    display: none;
   }
 
 } 
@@ -757,25 +761,21 @@ height: 210px;
     z-index: 5;
     top: 0;
     left: 0;
-    /*background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);*/
-    background: url("../img/screenOverlayRainbow.jpg") no-repeat center center;
+    background: #111;
     height: 100vh; 
-    overflow: hidden;
+    overflow-x: hidden;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     opacity: 1;
-    overflow-y: hidden;
-    transition: 0.5s;
+    overflow-y: auto;
+    transition: 0.5s;;
 }
 
 .screenOverlay-content {
     position: relative;
-    top: 20%;
     width: 100%;
-    text-align: center;
 }
 
 .screenOverlay a {

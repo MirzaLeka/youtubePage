@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="../Resources/css/index.css">
   <link rel="stylesheet" href="../Resources/css/navmini.css">
   <link rel="stylesheet" href="../Resources/css/navbar.css">
+  <link rel="stylesheet" href="../Resources/css/overlay.css">
   <!-- Tab Icon -->
   <link rel="icon" type="image/gif" href="tabIcon.png" />
 
@@ -304,42 +305,41 @@
                 <div class="item">
                   <img src="../Resources/img/rainbowSeries.jpg" data-color="lightblue" alt="First Image">
                   <div class="carousel-caption">
-                    <h3>
+                    <h3 class="carouselCaptionInfo">
                       Rainbow Six Siege | Battlefield Hardline Saga</h3>
-                    <!--<button onclick="openNav();" class="btn learnMore">Learn More</button>-->
-                    <button class="btn openOverlay learnMore">Learn More</button>
+                    <button onclick="openNav(0);" class="btn learnMore">Learn More</button>
                   </div>
                 </div>
                 <div class="item">
                   <img src="../Resources/img/assassinsSeries.jpg" data-color="firebrick" alt="Second Image">
                   <div class="carousel-caption">
-                    <h3>
+                    <h3 class="carouselCaptionInfo">
                       Assassin's Creed: Family Bond Saga</h3>
-                    <button class="btn openOverlay learnMore">Learn More</button>
+                    <button onclick="openNav(1);" class="btn openOverlay learnMore">Learn More</button>
                   </div>
                 </div>
                 <div class="item">
                   <img src="../Resources/img/comebackSeries.jpg" data-color="violet" alt="Third Image">
                   <div class="carousel-caption">
-                    <h3>
+                    <h3 class="carouselCaptionInfo">
                       Comeback Series Saga</h3>
-                    <button class="btn openOverlay learnMore">Learn More</button>
+                    <button onclick="openNav(2);" class="btn openOverlay learnMore">Learn More</button>
                   </div>
                 </div>
                 <div class="item">
                   <img src="../Resources/img/onePieceSeries.jpg" data-color="lightgreen" alt="Fourth Image">
                   <div class="carousel-caption">
-                    <h3>
+                    <h3 class="carouselCaptionInfo">
                       One Piece: The Will of D Saga</h3>
-                    <button class="btn openOverlay learnMore">Learn More</button>
+                    <button onclick="openNav(3);" class="btn openOverlay learnMore">Learn More</button>
                   </div>
                 </div>
                 <div class="item">
                   <img src="../Resources/img/spidermanSeries.jpg" data-color="tomato" alt="Fifth Image">
                   <div class="carousel-caption">
-                    <h3>
+                    <h3 class="carouselCaptionInfo">
                       The Amazing Spiderman Saga</h3>
-                    <button class="btn openOverlay learnMore">Learn More</button>
+                    <button onclick="openNav(4);" class="btn openOverlay learnMore">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -613,50 +613,102 @@
 <!-- SCREEN OVERLAY -->
 
   <div id="myNav" class="screenOverlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" style="z-index: 10;" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="screenOverlay-content">
 
-    <div class="container-fluid bg-3">    
+
+<!-- OVERLAY HTML CODE-->
+
+<div class="container-fluid" id="mainContainerFluid" style="height: 100%;">
+  <div class="row content" style="height: 100%;">
+
+<!-- sidenav -->
+
+    <div class="col-sm-3 sidenav hidden-xs blackBackground">
+      <br>
+      <ul class="nav nav-pills nav-stacked videosUl">
+      </ul>
+    </div>
+    <br>
+
+  <!-- / sidenav -->
+
+  <!-- Video -->
+    
+    <div class="col-sm-9">
+
+      <br>
+        <div class="overlayHeader">
+            <h3 class="overlayTitle"></h3>
+          </div>
+
+                    <div class="container-fluid" style="margin-top: 40px;">
+                        <div class="row content">
+                    
+                          <div class="col-sm-8 blackBackground" id="overlayVideoDescDiv">
+
+                              <h4 class="overlayVideoDescription">
+                            
+                              </h4>
+
+                            </div>
+
+                            <div id="sideImages" class="col-sm-4"> 
+
+                               
+
+                            </div>
+                          </div>
+
+                           
+<div class="container-fluid bg-3 text-center blackBackground" id="textCenterDiv">    
   <div class="row">
+  
+    <div class="col-md-2 hidden-sm hidden-xs">
+  
+    </div>
+  
+    <div class="col-md-8 col-sm-12 col-xs-12" id="overlayIframeDiv"> 
 
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <iframe class="overlayIframe" src="" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen">
+      </iframe>
 
-<div style="background:#111; opacity: 0.8;" class="screenOverlayDescription">
+      <div class="col-sm-12 col-xs-12" id="overlayBottomList">
 
-<h2 style="color:#FFF;">Ranbow Six Siege | Battlefield Hardline</h2>
-<br>
-<P style="color:#FFF;" style="float: left;">Saga combines many gaming series together into a groundbreaking cops and criminals drama.<br>
-Beside Rainbow Six and Battlefield, series also features Counter Strike, Swat 4, as well as SWAT 2003 and SWAT Firefight movies.<br><br>
-Next episode in the series brings Payday, Grand Theft Auto and Call of Duty into the mix, combined with top-notch narrative and voice actors.<br><br> Release: TBA </P>
-<br><br><br><br><br>
 
-</div>
+          <ul class="nav nav-pills nav-stacked videosUl">
+            </ul>
 
+     <!--   <div class="col-sm-5 col-xs-5">
+
+        </div>
+
+        <div class="col-sm-7 col-xs-7">
+
+          </div> -->
+
+      </div>
+  
     </div>
 
-    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-
-      <div class="episodes">
-<img class="episodesImg" src="http://i3.ytimg.com/vi/Qu4H06Jsn6w/maxresdefault.jpg"/>
-      </div>
+    <div class="col-md-2 hidden-sm hidden-xs">
     
     </div>
 
-    <!-- -->
+  </div>
+</div><br>
+          
+      
 
-      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-
-          <div class="episodes">
-<img class="episodesImg" src="http://i3.ytimg.com/vi/eAdz1faa3d4/maxresdefault.jpg"/>
-      </div>
-    
-    </div>
- 
- 
   </div>
 </div>
 
- 
+</div>
+
+</div>
+
+<!-- / OVERLAY HTML CODE-->
   
   </div>
 </div>
@@ -670,6 +722,7 @@ Next episode in the series brings Payday, Grand Theft Auto and Call of Duty into
 </body>
 
 <!-- index.js -->
+<script src="../Resources/js/overlay.js"></script>
 <script src="../Resources/js/index.js"></script>
 <script src="../Resources/js/navmini.js"></script>
 <script src="../Resources/js/navbar.js"></script>

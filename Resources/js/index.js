@@ -177,7 +177,7 @@ Well this separates code into if / else statement, if you see snackbar you can't
 
 
 
-/* NEXT CREW HEADER 
+/* NEXT CREW HEADER --- print char by char
 
 var showText = function (target, message, index, interval) {   
   if (index < message.length) {
@@ -198,6 +198,7 @@ $(function () {
 
 */
 
+
 // Email Us
 
 function openEmail(){
@@ -208,17 +209,49 @@ window.open("mailto:nxc-production@live.com");
 
 
 
-$(".openOverlay").click(() => {
-alert("Work in progress");
-
-});
-
 /* FULL SCREEN OVERLAY */
 
-function openNav() {
+function openNav(i) {
     document.getElementById("myNav").style.display = "block";
+
+    /* Display content from the array of content */
+    getOverlayContent(i);
+
+/* Body is painted in #111 and fullPageContent class is removed, so that you don't see it in the back once you resize overlay */
+
+    $("body").css({
+      overflowY: "hidden",
+      background: "#111"
+    })
+    $(".fullPageContent").hide();
+
+  /* Stop page iframe play when we open overlay */
+
+  $('.pageIframe').attr('src', $('.pageIframe').attr('src'));
+
 }
 
-function closeNav() {
+function closeNav(i) {
+  console.log("closing!");
     document.getElementById("myNav").style.display = "none";
+
+    /* Bringing everything else back to normal */
+
+    $(".fullPageContent").show();
+    $("body").css({
+      overflowY: "auto",
+      background: "#FFF"
+    });
+
+/* Scroll back to original series once overlay is closed */
+
+  $('html, body').animate({
+      scrollTop: $("#scrollOs").offset().top
+  }, 1);
+
+/* Stop overlay iframe video when overlay is closed */
+
+$('.overlayIframe').attr('src', $('.overlayIframe').attr('src'));
+
+
 }

@@ -84,8 +84,11 @@ body {
     margin-top: 12%; } }
 @media only screen and (max-width: 640px) {
   .title {
-    font-size: 24px;
-    margin-top: 22%; } }
+    font-size: 26px;
+    margin-top: 16%; } }
+@media only screen and (max-width: 480px) {
+  .title {
+    display: none; } }
 .jumbotron {
   background: transparent; }
 
