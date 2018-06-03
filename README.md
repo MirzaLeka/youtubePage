@@ -9,7 +9,7 @@
 npm install
 
 # Serve on localhost:3000
-npm start  // starts Nodemon
+npm start  
 ``` 
 
 #### What is Next Crew Production?

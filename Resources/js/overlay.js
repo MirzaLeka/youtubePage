@@ -23,7 +23,7 @@ let overlayArray = [
 
     {
         title:  "Assassin's Creed: Family Bond Saga",
-        description: "<br> Starting with Kenway family, divnig back into Ezio's saga and Altair and finally finishing with Arno and Jacob, saga gives each major Assassin's Creed protagonist a moment to shine with a sound of Eminem and Imagine Dragons playing in the back.",
+        description: "<br> Starting with Kenway family, divnig back into Ezio's saga and Altair and finishing with Arno and Jacob, saga gives each major Assassin's Creed protagonist a moment to shine with a sound of Eminem and Imagine Dragons playing in the back.",
         videoURLs: [
             'https://www.youtube.com/embed/CDSVtRXnT4',
             'https://www.youtube.com/embed/WuuM1kwxPO4',

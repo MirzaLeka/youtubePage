@@ -85,7 +85,16 @@ body {
 @media only screen and (max-width: 640px) {
   .title {
     font-size: 26px;
-    margin-top: 16%; } }
+    margin-top: 16%; }
+
+  .postImg {
+    height: 250px !important; }
+
+  .coverImg {
+    height: 300px !important; }
+
+  .postContent {
+    font-size: 12px !important; } }
 @media only screen and (max-width: 480px) {
   .title {
     display: none; } }
