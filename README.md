@@ -1,6 +1,8 @@
 ### **Next Crew Production official website**
 
-##### Next Crew Production website is a sample of fully responsive website. It's built on technologies like Bootstrap, Sass, Jquery and features elements like overlays, sliders, iframes, snackbars etc. There are plans to turn this sample into official website. Right now, there is a local server built with ExpressJS. Project receives new updates from time to time.
+##### Next Crew Production website is a sample of fully responsive website. It's built on technologies like Bootstrap, Sass, Jquery, ExpressJS and features elements like overlays, sliders, iframes, snackbars etc. Project receives new updates from time to time. 
+##### Here's a preview of Next Crew Production website running on Heroku:
+https://nextcrewproduction.herokuapp.com/
 
 #### Quick Start
 
