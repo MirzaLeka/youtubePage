@@ -14,9 +14,13 @@ npm i -g gulp
 npm install
 
 # Run gulp by just typing
-gulp
+gulp 
+# or by typing 
+npm start
+
 # This will create dist folder. Inside a folder you will find minified html and css files. 
-# File server.js in a root folder starts server on localhost:3000. Once you run gulp, gulp will connect to server.js file and start the server.
+# File server.js in a root folder starts server on localhost:3000.
+# Once you run gulp, gulp will connect to server.js file and start the server.
 # Gulp also comes with auto-reload.
 
 # Once you are done testing make sure to delete dist folder by running
