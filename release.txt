@@ -1,6 +1,0 @@
-
-Future updates:
-
-- Minified files with GulpJS
-- Use of database
-- Use of youtube API
