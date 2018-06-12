@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto; }
+
 /* LOADER */
 .mainDiv {
   /* Positioning */
