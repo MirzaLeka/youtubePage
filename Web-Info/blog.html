@@ -39,7 +39,7 @@
 
   <!-- MINI NAVBAR -->
 
-<ul class="outerNavUl fullPageContent" style="width: 90px;">
+<ul class="outerNavUl" style="width: 90px; display: none;">
 
     <li class="outerNavLi home"><a href="#" class="outerNavLiAnchor"><i class="fa fa-arrow-up"></i> Top</a></li>
     <li class="outerNavLi cr"><a target="_blank" href="https://www.youtube.com/c/nonyx" class="outerNavLiAnchor"><i class="fa fa-youtube-play"></i> Nonyx</a></li>
@@ -219,7 +219,7 @@
 
 $(".fullPageContent").css({
   display: "none"
-})
+});
 
 $("body").css({
   background: "#111"
@@ -232,6 +232,7 @@ $(function() {
         background: "#000"
       });      
       $(".fullPageContent").delay(500).fadeIn(1000);  
+      $(".outerNavUl").delay(1500).fadeIn(400);  
   });
 });
 

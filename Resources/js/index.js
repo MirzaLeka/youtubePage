@@ -9,7 +9,7 @@ popularUploads();
 
 $(".fullPageContent").css({
   display: "none"
-})
+});
 
 $("body").css({
   background: "#111"
@@ -22,6 +22,7 @@ $(function() {
         background: "#FFF"
       });      
       $(".fullPageContent").delay(500).fadeIn(1000);  
+      $(".outerNavUl").delay(1500).fadeIn(400);  
   });
 });
 
