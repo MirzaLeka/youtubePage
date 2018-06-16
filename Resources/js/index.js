@@ -6,7 +6,7 @@ recentUploads();
 popularUploads();
 
 /* Loader  */
-
+ 
 $(".fullPageContent").css({
   display: "none"
 });
@@ -46,7 +46,7 @@ let li = "";
 
 for(let i = 0; i < uploadsNames.length; i++) {
 li += ' <li class="listLi" onclick="getVideoSrc(' + i + ')">'
-+ '<img class="listImg" src="../Resources/img/' + uploadsWallpapers[i] + '"/>'
++ '<img class="listImg" src="../Resources/dist/img/' + uploadsWallpapers[i] + '"/>'
 + '<ul class="innerUl"> '
 + '<li class="innerLi">' + uploadsNames[i] + '</li>'
 + '</ul>   </li>';
@@ -107,7 +107,7 @@ let popularImg = ["roronoaPopular.jpg", "suicidePopular.jpg", "igiPopular.jpg",
   
   for(let i = 0; i < popularVidArray.length; i++) {
     
-    row+='  <div class="col-sm-4 hey"> <div class="popularDiv" title="Watch on Youtube"> <a href="'+ popularVidUrl[i] + '" target="_blank">  <img class="popularImg" src="../Resources/img/' + popularImg[i] + ' "/>         <h4 class="popularTitle">' + popularVidArray[i] + '</h4> </a> </div> </div>'
+    row+='  <div class="col-sm-4 hey"> <div class="popularDiv" title="Watch on Youtube"> <a href="'+ popularVidUrl[i] + '" target="_blank">  <img class="popularImg" src="../Resources/dist/img/' + popularImg[i] + ' "/>         <h4 class="popularTitle">' + popularVidArray[i] + '</h4> </a> </div> </div>'
     
   }
   $("#row").html(row);

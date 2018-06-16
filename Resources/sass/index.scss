@@ -65,7 +65,7 @@ box-shadow: $top $down $left $right $color;
   /* /LOADER */
 
 #header{
-    background: url("../img/city.jpg") no-repeat center center;
+    background: url("../dist/img/city.jpg") no-repeat center center;
     width: 100%;
     padding: 20px 10px 60px 10px;
     background-attachment: fixed;
@@ -108,21 +108,21 @@ box-shadow: $top $down $left $right $color;
 }
 
 #recentUploads{
-background: url("../img/videoeditorCoverBlur.jpg")  no-repeat center center;
+background: url("../dist/img/videoeditorCoverBlur.jpg")  no-repeat center center;
 height: 100%;
 background-size: 100% 100%;
 background-attachment: fixed;
 }
 
 #originalSeries{
-background: url("../img/virtualdjCoverBlur.jpg")  no-repeat center center;
+background: url("../dist/img/virtualdjCoverBlur.jpg")  no-repeat center center;
 height: 100%;
 background-size: 100% 100%;
 background-attachment: fixed;
 }
 
 #getConnect{
-background: url("../img/photoshopCoverBlur.jpg")  no-repeat center center;
+background: url("../dist/img/photoshopCoverBlur.jpg")  no-repeat center center;
 height: 100%;
 background-size: 100% 100%;
 background-attachment: fixed;
@@ -657,7 +657,7 @@ height: 210px;
 /* Upcoming */
 
 #upcomingVideo{
-  background: url('../img/insurgencyNext.jpg');
+  background: url('../dist/img/insurgencyNext.jpg');
   height: 70vh;
   width: 100%;
   opacity: 0.85;

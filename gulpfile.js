@@ -11,11 +11,16 @@ const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
 const zip = require('gulp-zip');
 const babel = require('gulp-babel');
+const imagemin = require('gulp-imagemin');
+const imageminJpg = require("imagemin-jpeg-recompress");
+const imageminPng = require("imagemin-pngquant");
 
 const STYLES_PATH = 'Resources/css/**/*.css';
-const SCRIPTS_PATH = 'Resources/js/**/*.js'; // grabs js inside of folders inside of /js folder
-const DEST_PATH = 'Resources/dist'; // route where all our compiled files will be stored
+const SCRIPTS_PATH = 'Resources/js/**/*.js'; 
+const DEST_PATH = 'Resources/dist';
 const HTML_PATH = 'Web-Info/**/*.html';
+const IMG_PATH = 'Resources/img/**/*';
+const IMG_DEST = 'Resources/dist/img'
 
 // HTML
 gulp.task('html', () => {
@@ -47,6 +52,24 @@ return gulp.src(STYLES_PATH)
 });
 
 
+//Images
+gulp.task('images', () => {
+	console.log("Starting images task");
+	gulp.src(IMG_PATH)
+	.pipe(imagemin(
+		[
+			imagemin.gifsicle(),
+			imagemin.jpegtran(),
+			imagemin.optipng(),
+			imagemin.svgo(),
+			imageminJpg(),
+			imageminPng()
+		]
+	))
+	.pipe(gulp.dest(IMG_DEST));
+	});
+
+
 // Clean
 gulp.task('clean', () => {
 return del.sync([DEST_PATH]); 
@@ -65,11 +88,12 @@ gulp.task('watch', () => {
 console.log("Gulp is watching");
 require('./server.js'); 
 liveReload.listen();
-gulp.watch('web-info/index.html', ['html']);
+gulp.watch(HTML_PATH, ['html']);
 gulp.watch(STYLES_PATH, ['styles']); 
+gulp.watch(IMG_PATH, ['images']); 
 });
 
 
-gulp.task('default', ['html', 'styles', 'watch'], () => { 
+gulp.task('default', ['html', 'styles', 'images', 'watch'], () => { 
 console.log("Starting default task");
 });
