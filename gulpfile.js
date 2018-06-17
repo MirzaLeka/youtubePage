@@ -58,12 +58,21 @@ gulp.task('images', () => {
 	gulp.src(IMG_PATH)
 	.pipe(imagemin(
 		[
-			imagemin.gifsicle(),
-			imagemin.jpegtran(),
-			imagemin.optipng(),
-			imagemin.svgo(),
-			imageminJpg(),
-			imageminPng()
+			imagemin.gifsicle({interlaced: true}),
+			imagemin.jpegtran({progressive: true}),
+			imagemin.optipng({optimizationLevel: 1}),
+			imagemin.svgo({
+				plugins: [
+					{removeViewBox: true},
+					{cleanupIDs: false}
+				]}),
+
+			imageminJpg({
+				quality: "low",
+				min: 40,
+				max: 60
+			}),
+			imageminPng({})
 		]
 	))
 	.pipe(gulp.dest(IMG_DEST));
