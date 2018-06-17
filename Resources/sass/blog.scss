@@ -5,6 +5,7 @@
   box-shadow: $top $down $left $right $color;
   }
 
+  $main-orange: #FFA500;
 
   html,body{
     overflow-x: hidden;
@@ -27,7 +28,7 @@
   .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #FFA500;
+    border-top: 16px solid $main-orange;
     width: 120px;
     height: 120px;
   /* Animation */
@@ -69,7 +70,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     text-align: center;
-    border-bottom: 2px solid #FFA500;
+    border-bottom: 2px solid $main-orange;
   }
 
   #blogTitle{
@@ -159,7 +160,7 @@ width: 100%;
 }
 
 .postHeader{
- color: #FFA500;
+ color: $main-orange;
  padding: 10px 0;
  text-align: center;
  width: 100%;
@@ -191,7 +192,7 @@ width: 100%;
 }
 
 .betweenPosts{
-  background: #FFA500;
+  background: $main-orange;
   background-size: 100% 10vh;
   height: 100px;
 }
