@@ -10,7 +10,7 @@ $(document).ready(() => {
     background: "#111"
   });
   
-  $(function() {
+  $(window).on('load', () => {
     $(".mainDiv").fadeOut(2000, function() {
         $("#header").slideDown(1000);  
         $("body").css({

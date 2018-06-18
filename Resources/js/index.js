@@ -15,16 +15,17 @@ $("body").css({
   background: "#111"
 });
 
-$(function() {
+$(window).on('load', () => {
   $(".mainDiv").fadeOut(2000, function() {
-      $("#header").slideDown(1000);  
-      $("body").css({
-        background: "#FFF"
-      });      
-      $(".fullPageContent").delay(500).fadeIn(1000);  
-      $(".outerNavUl").delay(1500).fadeIn(400);  
-  });
+    $("#header").slideDown(1000);  
+    $("body").css({
+      background: "#FFF"
+    });      
+    $(".fullPageContent").delay(500).fadeIn(1000);  
+    $(".outerNavUl").delay(1500).fadeIn(400);  
 });
+});
+
 
 /* / Loader */
 
