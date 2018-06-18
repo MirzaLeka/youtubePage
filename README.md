@@ -1,8 +1,6 @@
 ### **Next Crew Production official website**
 
-##### Next Crew Production website is a sample of fully responsive website. It's built on technologies like Bootstrap, Sass, EcmaScript6, Jquery, Node, Express, GulpJS and features elements like overlays, sliders, iframes, snackbars etc. Project receives new updates from time to time. 
-##### Here's a preview of Next Crew Production website running on Heroku:
-https://nextcrewproduction.herokuapp.com/
+##### Next Crew Production website is a sample of fully responsive website. It's built on technologies like Bootstrap, Sass, EcmaScript6, Jquery, Node, Express, GulpJS and features elements like overlays, sliders, iframes, snackbars etc. Project receives new updates from time to time. Here's a preview of the website running on [Heroku](https://nextcrewproduction.herokuapp.com/).
 
 #### Quick Start
 
@@ -13,16 +11,16 @@ npm i -g gulp
 # Install dependencies
 npm install
 
-# Run gulp by just typing
+# Run gulp by typing
 gulp 
 # or by typing 
 npm start
 
-# This will create dist folder. Inside a folder you will find minified html and css files. 
+# This will create dist folder. Inside a folder you will find minified html, css and js files. 
 # Inside dist folder you will also find img folder where all compressed images will be stored.
 # File server.js in a root folder starts server on localhost:3000.
 # Once you run gulp, gulp will connect to server.js file and start the server.
-# Gulp also comes with gulp watch and auto-reload.
+# Gulp also comes with gulp watch and live-reload.
 
 # Once you are done testing make sure to delete dist folder by running
 gulp clean
