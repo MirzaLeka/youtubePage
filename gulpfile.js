@@ -10,7 +10,7 @@ const plumber = require('gulp-plumber');
 const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
 const zip = require('gulp-zip');
-const babel = require('gulp-babel');
+var babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const imageminJpg = require("imagemin-jpeg-recompress");
 const imageminPng = require("imagemin-pngquant");
@@ -50,6 +50,28 @@ return gulp.src(STYLES_PATH)
 .pipe(gulp.dest(DEST_PATH))
 .pipe(liveReload());
 });
+
+
+// Scripts
+gulp.task('scripts', function () {
+	console.log('Starting scripts task');
+
+	return gulp.src(SCRIPTS_PATH)
+		.pipe(plumber(function (err) {
+			console.log('Scripts Task Error');
+			console.log(err);
+			this.emit('end');
+		}))
+		.pipe(sourcemaps.init())
+		.pipe(babel({
+			presets: ['es2015']
+		}))
+		.pipe(uglify())	
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest(DEST_PATH))
+		.pipe(liveReload());
+});
+
 
 
 //Images
@@ -99,10 +121,11 @@ require('./server.js');
 liveReload.listen();
 gulp.watch(HTML_PATH, ['html']);
 gulp.watch(STYLES_PATH, ['styles']); 
+gulp.watch(SCRIPTS_PATH, ['scripts']); 
 gulp.watch(IMG_PATH, ['images']); 
 });
 
 
-gulp.task('default', ['html', 'styles', 'images', 'watch'], () => { 
+gulp.task('default', ['html', 'styles', 'scripts', 'images', 'watch'], () => { 
 console.log("Starting default task");
 });

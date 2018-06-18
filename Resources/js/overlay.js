@@ -96,7 +96,7 @@ let overlayArray = [
         ],
         sideImages : [
          "../Resources/dist/img/spidermanSeries.jpg",
-         "../Resource/dists/img/overlayImg/spiderSide.jpg"
+         "../Resources/dist/img/overlayImg/spiderSide.jpg"
         ]
     }
 
