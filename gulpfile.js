@@ -92,7 +92,8 @@ gulp.task('images', () => {
 			imageminJpg({
 				quality: "low",
 				min: 40,
-				max: 60
+				max: 60,
+				optimizationLevel: 1
 			}),
 			imageminPng({})
 		]
