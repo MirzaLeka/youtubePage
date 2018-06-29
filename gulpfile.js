@@ -20,7 +20,7 @@ const SCRIPTS_PATH = 'Resources/js/**/*.js';
 const DEST_PATH = 'Resources/dist';
 const HTML_PATH = 'Web-Info/**/*.html';
 const IMG_PATH = 'Resources/img/**/*';
-const IMG_DEST = 'Resources/dist/img'
+const IMG_DEST = 'Resources/compressedImg/'
 
 // HTML
 gulp.task('html', () => {
@@ -95,7 +95,11 @@ gulp.task('images', () => {
 				max: 60,
 				optimizationLevel: 1
 			}),
-			imageminPng({})
+			imageminPng({
+				min: 40,
+				max: 60,
+				optimizationLevel: 1
+			})
 		]
 	))
 	.pipe(gulp.dest(IMG_DEST));
@@ -123,10 +127,9 @@ liveReload.listen();
 gulp.watch(HTML_PATH, ['html']);
 gulp.watch(STYLES_PATH, ['styles']); 
 gulp.watch(SCRIPTS_PATH, ['scripts']); 
-gulp.watch(IMG_PATH, ['images']); 
 });
 
 
-gulp.task('default', ['html', 'styles', 'scripts', 'images', 'watch'], () => { 
+gulp.task('default', ['html', 'styles', 'scripts', 'watch'], () => { 
 console.log("Starting default task");
 });

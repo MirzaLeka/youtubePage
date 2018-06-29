@@ -45,7 +45,7 @@ body {
   overflow-x: hidden; }
 
 #blogHeader {
-  background: url("../dist/img/city.jpg") no-repeat center center;
+  background: url("../compressedImg/city.jpg") no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 30vh;

@@ -11,13 +11,13 @@ let overlayArray = [
         "https://www.youtube.com/embed/slbnHR0gngg"
        ],
        videoImages : [
-        "../Resources/dist/img/overlayImg/r61.jpg",
-        "../Resources/dist/img/overlayImg/r62.jpg",
-        "../Resources/dist/img/overlayImg/r63.jpg"
+        "../Resources/compressedImg/overlayImg/r61.jpg",
+        "../Resources/compressedImg/overlayImg/r62.jpg",
+        "../Resources/compressedImg/overlayImg/r63.jpg"
        ],
        sideImages : [
-        "../Resources/dist/img/rainbowSeries.jpg",
-        "../Resources/dist/img/overlayImg/r6Side.jpg"
+        "../Resources/compressedImg/rainbowSeries.jpg",
+        "../Resources/compressedImg/overlayImg/r6Side.jpg"
        ]
     },
 
@@ -31,13 +31,13 @@ let overlayArray = [
             
         ],
         videoImages : [
-         "../Resources/dist/img/overlayImg/bond1.jpg",
-         "../Resources/dist/img/overlayImg/bond2.jpg",
-         "../Resources/dist/img/overlayImg/bond3.jpg"
+         "../Resources/compressedImg/overlayImg/bond1.jpg",
+         "../Resources/compressedImg/overlayImg/bond2.jpg",
+         "../Resources/compressedImg/overlayImg/bond3.jpg"
         ],
         sideImages : [
-         "../Resources/dist/img/assassinsSeries.jpg",
-         "../Resources/dist/img/overlayImg/bondSide.jpg"
+         "../Resources/compressedImg/assassinsSeries.jpg",
+         "../Resources/compressedImg/overlayImg/bondSide.jpg"
         ]
     },
 
@@ -52,15 +52,15 @@ let overlayArray = [
             'https://www.youtube.com/embed/9F1vZdshgVw'
         ],
         videoImages : [
-         "../Resources/dist/img/overlayImg/moh1.jpg",
-         "../Resources/dist/img/overlayImg/moh2.jpg",
-         "../Resources/dist/img/overlayImg/moh3.jpg",
-         "../Resources/dist/img/overlayImg/moh4.jpg",
-         "../Resources/dist/img/overlayImg/moh5.jpg"
+         "../Resources/compressedImg/overlayImg/moh1.jpg",
+         "../Resources/compressedImg/overlayImg/moh2.jpg",
+         "../Resources/compressedImg/overlayImg/moh3.jpg",
+         "../Resources/compressedImg/overlayImg/moh4.jpg",
+         "../Resources/compressedImg/overlayImg/moh5.jpg"
         ],
         sideImages : [
-         "../Resources/dist/img/comebackSeries.jpg",
-         "../Resources/dist/img/overlayImg/mohSide.jpg"
+         "../Resources/compressedImg/comebackSeries.jpg",
+         "../Resources/compressedImg/overlayImg/mohSide.jpg"
         ]
     },
 
@@ -73,13 +73,13 @@ let overlayArray = [
             'https://www.youtube.com/embed/oxrXfDuaTl4'
         ],
         videoImages : [
-         "../Resources/dist/img/overlayImg/will1.jpg",
-         "../Resources/dist/img/overlayImg/will2.jpg",
-         "../Resources/dist/img/overlayImg/will3.jpg"
+         "../Resources/compressedImg/overlayImg/will1.jpg",
+         "../Resources/compressedImg/overlayImg/will2.jpg",
+         "../Resources/compressedImg/overlayImg/will3.jpg"
         ],
         sideImages : [
-         "../Resources/dist/img/onePieceSeries.jpg",
-         "../Resources/dist/img/overlayImg/willSide.jpg"
+         "../Resources/compressedImg/onePieceSeries.jpg",
+         "../Resources/compressedImg/overlayImg/willSide.jpg"
         ]
     },
 
@@ -91,12 +91,12 @@ let overlayArray = [
             'https://www.youtube.com/embed/XQ_AH4IFCT4'            
         ],
         videoImages : [
-         "../Resources/dist/img/overlayImg/spider1.jpg",
-         "../Resources/dist/img/overlayImg/spider2.jpg",
+         "../Resources/compressedImg/overlayImg/spider1.jpg",
+         "../Resources/compressedImg/overlayImg/spider2.jpg",
         ],
         sideImages : [
-         "../Resources/dist/img/spidermanSeries.jpg",
-         "../Resources/dist/img/overlayImg/spiderSide.jpg"
+         "../Resources/compressedImg/spidermanSeries.jpg",
+         "../Resources/compressedImg/overlayImg/spiderSide.jpg"
         ]
     }
 

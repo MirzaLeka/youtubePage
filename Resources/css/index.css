@@ -42,7 +42,7 @@ body, .container, .jumbotron {
     transform: rotate(360deg); } }
 /* /LOADER */
 #header {
-  background: url("../dist/img/city.jpg") no-repeat center center;
+  background: url("../compressedImg/city.jpg") no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
   background-attachment: fixed;
@@ -80,19 +80,19 @@ body, .container, .jumbotron {
   height: 100%; }
 
 #recentUploads {
-  background: url("../dist/img/videoeditorCoverBlur.jpg") no-repeat center center;
+  background: url("../compressedImg/videoeditorCoverBlur.jpg") no-repeat center center;
   height: 100%;
   background-size: 100% 100%;
   background-attachment: fixed; }
 
 #originalSeries {
-  background: url("../dist/img/virtualdjCoverBlur.jpg") no-repeat center center;
+  background: url("../compressedImg/virtualdjCoverBlur.jpg") no-repeat center center;
   height: 100%;
   background-size: 100% 100%;
   background-attachment: fixed; }
 
 #getConnect {
-  background: url("../dist/img/photoshopCoverBlur.jpg") no-repeat center center;
+  background: url("../compressedImg/photoshopCoverBlur.jpg") no-repeat center center;
   height: 100%;
   background-size: 100% 100%;
   background-attachment: fixed; }
@@ -512,7 +512,7 @@ a {
     font-size: 36px; } }
 /* Upcoming */
 #upcomingVideo {
-  background: url("../dist/img/insurgencyNext.jpg");
+  background: url("../compressedImg/insurgencyNext.jpg");
   height: 70vh;
   width: 100%;
   opacity: 0.85;
