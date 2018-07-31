@@ -4,6 +4,7 @@
   "description": "next crew production website",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "npm": "^5.8.0"
   },
