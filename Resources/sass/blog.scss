@@ -1,4 +1,7 @@
 
+@import 'partials/navbar.scss';
+@import 'partials/navmini.scss';
+
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 
 @mixin shadowBottom($top, $down, $left, $right, $color){

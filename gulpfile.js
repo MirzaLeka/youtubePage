@@ -42,11 +42,10 @@ return gulp.src(STYLES_PATH)
 			console.log(err.toString()); 
 			this.emit('end');
 		}))
-        .pipe(sourcemaps.init()) 
-        .pipe(autoPrefixer({ 
-})) 
+        // .pipe(sourcemaps.init()) 
+        .pipe(autoPrefixer()) 
 .pipe(minifyCss()) 
-.pipe(sourcemaps.write()) 
+// .pipe(sourcemaps.write()) 
 .pipe(gulp.dest(DEST_PATH))
 .pipe(liveReload());
 });
@@ -57,17 +56,17 @@ gulp.task('scripts', function () {
 	console.log('Starting scripts task');
 
 	return gulp.src(SCRIPTS_PATH)
-		.pipe(plumber(function (err) {
-			console.log('Scripts Task Error');
-			console.log(err);
-			this.emit('end');
-		}))
-		.pipe(sourcemaps.init())
+		// .pipe(plumber(function (err) {
+		// 	console.log('Scripts Task Error');
+		// 	console.log(err);
+		// 	this.emit('end');
+		// }))
+		// .pipe(sourcemaps.init())
 		.pipe(babel({
 			presets: ['es2015']
 		}))
 		.pipe(uglify())	
-		.pipe(sourcemaps.write())
+		// .pipe(sourcemaps.write())
 		.pipe(gulp.dest(DEST_PATH))
 		.pipe(liveReload());
 });
@@ -130,6 +129,6 @@ gulp.watch(SCRIPTS_PATH, ['scripts']);
 });
 
 
-gulp.task('default', ['html', 'styles', 'scripts', 'watch'], () => { 
+gulp.task('default', ['html', 'styles', 'scripts'], () => { 
 console.log("Starting default task");
 });

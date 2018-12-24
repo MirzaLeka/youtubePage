@@ -4,8 +4,8 @@ Next Crew Production website is a sample of fully responsive website. It's built
 
 ![](Resources/compressedImg/readmeImg/img1.jpg)
 
-#### *About production*
-##### Next Crew Production produces high quality content for youtube audience. Next Crew does everything from mixing music to video editing and creating custom wallpapers. Some of the tools they use: 
+#### *About Next Crew production*
+Next Crew Production produces high quality content for youtube audience. Next Crew does everything from mixing music to video editing and creating custom wallpapers. Some of the tools they use: 
 * Sony Vegas Pro 
 * Adobe Photoshop
 * Virtual DJ
